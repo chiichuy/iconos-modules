@@ -9,6 +9,9 @@
 # production
 /build
 
+
+
+
 # misc
 .DS_Store
 .env.local
@@ -92,3 +95,6 @@ typings/
 
 # next.js build output
 .next
+
+
+/.sass-cache
