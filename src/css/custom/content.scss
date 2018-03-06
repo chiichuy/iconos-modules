@@ -1,0 +1,76 @@
+.content {
+  padding-top: 2rem;
+}
+
+.lista {
+  text-align: left;
+  margin:0;
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  li:before { content: "- ";}
+}
+
+hr {
+  border-top: 1px solid $body-color;
+}
+
+
+.categoria-mini {
+  margin: 1.5rem 0;
+}
+.categoria-mini > .img {
+  margin-bottom: 0.7rem;
+}
+.categoria-mini > .img > img{
+  width: 6rem;
+
+  &:hover {
+    width: 6.5rem;
+    margin-top: -0.5rem;
+  }
+}
+
+.categoria-mini > a {
+  text-decoration: none;
+  color: $body-color;
+}
+
+.ensenada-banner {
+  background-color: $body-color;
+  padding: 50px 0px;
+}
+
+.ensenada-banner img {
+  height: 150px;
+  width: auto;
+}
+
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
+  color: $title-color;
+}
+
+.info-center {
+  margin: 2rem 0;
+  text-align: center;
+  &.section {
+    margin: 4rem 0;
+  }
+}
+
+.input-search {
+  width: 100%;
+}
+
+.input-search input {
+  text-align: center;
+}
