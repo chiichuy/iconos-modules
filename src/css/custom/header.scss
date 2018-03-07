@@ -8,8 +8,13 @@
 }
 
 .navbar > .form-inline {
-  background-color: $body-color-transparent;
+  background-color: $bg-light;
 }
+
+.navbar.navbar-light {
+  background-color: white;
+}
+
 
 .navbar .form-inline input {
   background-color: transparent;
@@ -18,7 +23,7 @@
 }
 
 .navbar .form-inline input::placeholder {
-  color: rgba(white, 0.5);
+  color: white;
   font-size: 14px;
 }
 .navbar .form-inline input:focus {

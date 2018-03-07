@@ -16,7 +16,7 @@
 }
 
 hr {
-  border-top: 1px solid $body-color;
+  border-top: 1px solid $dark;
 }
 
 
@@ -37,11 +37,11 @@ hr {
 
 .categoria-mini > a {
   text-decoration: none;
-  color: $body-color;
+  color: $dark;
 }
 
 .ensenada-banner {
-  background-color: $body-color;
+  background-color: $dark;
   padding: 50px 0px;
 }
 
