@@ -7,37 +7,44 @@
   font-size: medium;
 }
 
-.navbar > .form-inline {
-  background-color: $bg-light;
-}
-
 .navbar.navbar-light {
-  background-color: white;
+  background-color: $body-bg;
 }
 
 
-.navbar .form-inline input {
-  background-color: transparent;
-  border: none;
-  color: white;
+.navbar .form-inline {
+  background-color: $bg-light;
+
+
+  input {
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    &::placeholder {
+      color: white;
+      font-size: 14px;
+    }
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  button {
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+
+  img {
+    height: 15px;
+  }
 }
 
-.navbar .form-inline input::placeholder {
-  color: white;
-  font-size: 14px;
-}
-.navbar .form-inline input:focus {
-  border: none;
-  box-shadow: none;
-}
-.navbar .form-inline button {
-  border: none;
-  color: white;
-  background-color: transparent;
-}
-.navbar .form-inline img {
-  height: 15px;
-}
+
+
 
 .navbar-fixed-top {
   z-index: 10000;
