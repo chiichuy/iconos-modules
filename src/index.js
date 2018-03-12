@@ -7,14 +7,15 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 
-import './css/custom.scss'
+// import './css/custom.scss'
 
 
-// export {default as Button } from './components/buttons/Button'
-// export {default as ButtonSuccess } from './components/buttons/ButtonSuccess'
+export {default as Button } from './components/buttons/Button'
+export {default as ButtonSuccess } from './components/buttons/ButtonSuccess'
+export {default as InputText} from './components/inputs/InputText'
 
 
-ReactDOM.render((
-    <div>gola </div>
-), document.getElementById('root'));
+// ReactDOM.render((
+//     <div>gola </div>
+// ), document.getElementById('root'));
 registerServiceWorker();
