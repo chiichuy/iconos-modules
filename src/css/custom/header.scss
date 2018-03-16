@@ -4,7 +4,7 @@
 }
 .navbar a {
   margin-left: 30px;
-  font-size: medium;
+  font-size: 1rem;
 }
 
 .navbar.navbar-light {
@@ -23,7 +23,6 @@
 
     &::placeholder {
       color: white;
-      font-size: 14px;
     }
 
     &:focus {
@@ -36,11 +35,13 @@
     border: none;
     color: white;
     background-color: transparent;
+
+    img {
+      height: 15px;
+    }
   }
 
-  img {
-    height: 15px;
-  }
+
 }
 
 
@@ -51,5 +52,26 @@
   position: fixed;
   top: 0px;
   width: 100%;
+
+  img.colors {
+    margin-top:-1.4rem;
+    height: 0.5rem;
+    width: 100%;
+  }
+
+  .navbar{
+       div{
+         a{
+           &:hover{
+             color: $primary;
+
+           }
+         }
+       }
+
+  }
 }
+
+
+
 

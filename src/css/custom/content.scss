@@ -1,6 +1,9 @@
 .content {
   padding-top: 2rem;
 }
+ .container{
+   padding-top: 2rem;
+ }
 
 .lista {
   text-align: left;
@@ -29,14 +32,18 @@ hr {
   }
 
   .img {
+    width: 7rem;
+    height: 7rem;
     margin-bottom: 0.7rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
     img{
       width: 6rem;
 
       &:hover {
         width: 6.5rem;
-        margin-top: -0.5rem;
       }
     }
   }
@@ -53,6 +60,12 @@ hr {
   }
 }
 
+
+
+.SubTitulos {
+  background-color: $dark;
+}
+
 h1.title,
 h2.title,
 h3.title,
@@ -61,6 +74,35 @@ h5.title,
 h6.title {
   color: $title-color;
 }
+
+h1.informacion,
+h2.informacion,
+h3.informacion,
+h4.informacion,
+h5.informacion,
+h6.informacion {
+  color: $informacion-color;
+}
+
+h1.SubMenu,
+h2.SubMenu,
+h3.SubMenu,
+h4.SubMenu,
+h5.SubMenu,
+h6.SubMenu {
+  color: $subMenu;
+}
+
+h1.Campos,
+h2.Campos,
+h3.Campos,
+h4.Campos,
+h5.Campos,
+h6.Campos {
+  color: $secondary;
+}
+
+
 
 .info-center {
   margin: 2rem 0;
@@ -71,11 +113,212 @@ h6.title {
 }
 
 .input-search {
-  width: 100%;
-
+  width: 80%;
   input {
     text-align: center;
   }
 }
+
+.input-filtros{
+  width: 100%;
+  input {
+    text-align: center;
+  }
+}
+
+.btn-filtros{
+  width: 100%;
+  padding:0.5rem;
+}
+
+.content{
+  .nav{
+    background-color: $light;
+    a{
+     color:$dark;
+      &:hover {
+        color:$primary;
+      }
+    }
+  }
+}
+
+.map {
+    width: 35rem;
+    height: 20rem;
+}
+
+.tramitesMenu{
+  .container{
+       h1{
+         color:$subMenu;
+         font-size: 4rem;
+       }
+       nav{
+         background-color: $dark;
+         a{
+           color: $subMenu;
+         }
+       }
+  }
+
+}
+
+.encabezado{
+    padding:0 0;
+    height: 50px;
+    display: flex;
+    background: yellow;
+   // border:1px solid $red;
+
+    .izq{
+      padding-left:0;
+      width: 96%;
+      height: 100%;
+      background: $dark;
+      box-sizing: border-box;
+        p{
+          color:$subMenu;
+        }
+    }
+
+    .der{
+      padding-right: 0;
+      margin-right: 0;
+      width: 35%; /*tamaño del mas pequeño con respecto al mas grande */
+      height: 100%;
+      background: $primary;
+      box-sizing: border-box;
+      border-left: 21px solid $dark;
+      border-bottom: 50px solid transparent;
+
+    }
+}
+
+.contentTramite{
+  border:1px solid $light;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+
+   div{
+     input{
+       border:solid 1px $light;
+       padding-top: 0.3rem;
+       padding-bottom:0.3rem;
+       width: 100%;
+     }
+
+   }
+}
+
+.container{
+  .form-row{
+    .custom-select{
+       border:1px solid $light;
+       border-radius:0;
+       -moz-appearance: none;
+       -webkit-appearance: none;
+    }
+  }
+}
+
+.select-tramites{
+  height: 2.5rem;
+  width:15rem;
+  background:$contenedor-color;
+}
+
+
+.contenedorDetalle{
+  border:1px solid $light;
+  padding-left: 1rem;
+}
+
+.form-tramites{
+   div{
+     background: $light;
+         input{
+           height: 2.5rem;
+           width:15rem;
+           border-radius:0;
+           border:none;
+           background-color:$light;
+           color:$dark;
+           font-style:italic;
+         }
+         input::placeholder{
+           color:$dark;
+         }
+         button {
+           border-radius:0;
+           background-color:$light;
+           height: 2.5rem;
+           width:3rem;
+         }
+   }
+}
+
+.tramites{
+  img{
+    height: 4rem;
+    width:2.5rem;
+    padding: 0;
+  }
+  .ojo{
+    height: 1rem;
+    width:1rem;
+    padding: 0;
+  }
+
+  .detalle{
+    height: 2rem;
+    width:auto;
+    border:none;
+    background: transparent;
+    color:red;
+    &:hover {
+      color:$primary;
+    }
+  }
+  button{
+    color:red;
+  }
+
+
+  .flecha-abajo{
+    height: 0.6rem;
+    width:0.6rem;
+    padding: 0;
+  }
+}
+
+
+.detalle-status{
+  .fuente-fecha{
+    color:$light;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.pagBoton{
+  border:none;
+  width:2rem;
+  height:30px;
+  background:Transparent;
+
+}
+
+.paginacion{
+  background:$contenedor-color;
+}
+
+
+
+
+
+
 
 

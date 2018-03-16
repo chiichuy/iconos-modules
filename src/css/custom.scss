@@ -3,10 +3,11 @@ $secondary: #ca1474;
 $success: #83c442;
 $danger: #ea4330;
 $warning: #f8971d;
-//$info: #00b8b0;
+$info: #00b8b0;
 $light: #a9abac;
 $dark: #333840;
 $link: #83c442;
+$subMenu:#ffffff;
 
 
 $theme-colors: (
@@ -15,15 +16,20 @@ $theme-colors: (
         "success": $success,
         "danger": $danger,
         "warning": $warning,
-        "light": $light,
+        "light": rgba($light, 0.5),
         "dark": $dark,
         "link": $link
 );
 
+
+
 $body-color: $dark;
-$body-bg: white;
+$body-bg: #f7f7f7;
+$contenedor-color:#ffffff;
 $bg-light: rgba($light, 0.5);
 $title-color: $primary;
+$informacion-color:$success;
+
 
 @import 'bootstrap/bootstrap';
 @import "bootstrap/bootstrap-reboot";
@@ -32,6 +38,19 @@ $title-color: $primary;
 @import 'custom/header';
 @import 'custom/footer';
 @import 'custom/content';
+
+.borrar{
+  border: 1px solid red;
+}
+
+.borrarr{
+  border: 1px solid black;
+}
+
+.borde-color{
+  border: 1px solid $primary;
+}
+
 
 .col.title {
   text-align: center;
@@ -48,6 +67,7 @@ $title-color: $primary;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
   border-right-width: 0px;
+  text-align: center;
 }
 .input-group > .input-group-append > .btn,
 .input-group > .input-group-append > .input-group-text,
@@ -60,5 +80,7 @@ $title-color: $primary;
   border-left-width: 0px;
   border-color: $dark;
 }
+
+
 
 

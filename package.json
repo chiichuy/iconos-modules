@@ -1,7 +1,6 @@
 {
   "name": "iconos-modules",
   "version": "0.1.1",
-  "private": true,
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -12,7 +11,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass": "sass -w src/css/custom.scss:public/custom.css",
+    "sass": "sass -w src/css/custom.scss:public/custom.css --default-encoding=UTF-8",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
