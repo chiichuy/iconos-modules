@@ -1,9 +1,8 @@
 .content {
   padding-top: 2rem;
 }
- .container{
-   padding-top: 2rem;
- }
+
+
 
 .lista {
   text-align: left;
@@ -246,6 +245,7 @@ h6.Campos {
            background-color:$light;
            color:$dark;
            font-style:italic;
+           padding-left: 0.5rem;
          }
          input::placeholder{
            color:$dark;
@@ -259,40 +259,62 @@ h6.Campos {
    }
 }
 
-.tramites{
-  img{
+.tramites {
+  img {
     height: 4rem;
-    width:2.5rem;
+    width: 2.5rem;
     padding: 0;
   }
-  .ojo{
+  .ojo {
     height: 1rem;
-    width:1rem;
+    width: 1rem;
     padding: 0;
   }
 
-  .detalle{
+  .detalle {
     height: 2rem;
-    width:auto;
-    border:none;
+    width: auto;
+    border: none;
     background: transparent;
-    color:red;
     &:hover {
-      color:$primary;
+      color: $primary;
     }
   }
-  button{
-    color:red;
-  }
 
-
-  .flecha-abajo{
+  .flecha-abajo {
     height: 0.6rem;
-    width:0.6rem;
+    width: 0.6rem;
     padding: 0;
   }
-}
 
+  .docum-mini {
+    height: 2.5rem;
+    width: 2rem;
+    margin-left: 1rem;
+    margin-right: 0.4rem;
+  }
+
+  .margen {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+
+  .margen-top{
+    margin-top: 3rem;
+  }
+
+  input[type="checkbox"]{
+    margin-top: 2rem;
+    width: 1rem;
+    height:1rem;
+    border-radius: 0.1rem;
+  }
+
+  .editar-form-fecha{
+    border:1px solid $light;
+  }
+
+}
 
 .detalle-status{
   .fuente-fecha{
@@ -301,24 +323,126 @@ h6.Campos {
   }
 }
 
-
-
-.pagBoton{
-  border:none;
-  width:2rem;
-  height:30px;
-  background:Transparent;
-
+.container-fluid{
+  .margen{
+    margin-top: 2rem;
+  }
 }
+
 
 .paginacion{
   background:$contenedor-color;
+
+  .pagBoton{
+    border:none;
+    width:2rem;
+    height:30px;
+    background:Transparent;
+  }
+
+  .img-pag{
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+
+}
+
+.nav-serv-pub{
+  background: $light;
+  width: 15%;
+  float: left;
+  height:100%;
+  position: fixed;
+  border-right: 0.1rem solid $light;
+    li{
+      margin: 0;
+      padding-top: 0.9rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      align-items: center;
+      height: 3.5rem;
+
+      border-bottom: 0.1rem solid $body-bg;
+      list-style: none;
+      &:hover{
+        background: $body-bg;
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: $dark;
+      }
+    }
+}
+
+.ancho{
+  margin-left: 15%;
+  width: 85%;
+  padding-left:2rem;
+  padding-right: 2rem;
+}
+
+.contenedor-menu{
+  background-color: $light;
+}
+
+.notes {
+  background-color: $subMenu;
+  padding: 1rem;
+
+  .notesContent {
+    border-radius: 0;
+    border:1px solid $dark;
+    overflow-y: scroll;
+    height: 13rem;
+    width: 30rem;
+    padding-left:0.5rem;
+    padding-top:0.4rem;
+  }
+
+  .fondo{
+    background-color: $secondary;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    color:$subMenu;
+    height: 2.5rem;
+  //  border:1px solid $light;
+  }
+
+}
+
+.modal {
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display:flex;
+  background-color: rgba(0,0,0, 0.5);
+  justify-content: center;
+  align-items: center;
+
+
+  div {
+  background-color: white;
+  border-radius: 0.3rem;
+    .modalFooter {
+      display:flex;
+      justify-content: flex-end;
+      padding:0rem 1rem 1rem 1rem;
+
+    }
+
+  }
+
 }
 
 
 
+.comboLabel {
+  margin-bottom: 1rem;
 
-
-
-
-
+}

@@ -6957,9 +6957,6 @@ footer {
 .content {
   padding-top: 2rem; }
 
-.container {
-  padding-top: 2rem; }
-
 .lista {
   text-align: left;
   margin: 0;
@@ -7130,7 +7127,8 @@ h6.Campos {
     border: none;
     background-color: #a9abac;
     color: #333840;
-    font-style: italic; }
+    font-style: italic;
+    padding-left: 0.5rem; }
   .form-tramites div input::placeholder {
     color: #333840; }
   .form-tramites div button {
@@ -7151,29 +7149,126 @@ h6.Campos {
   height: 2rem;
   width: auto;
   border: none;
-  background: transparent;
-  color: red; }
+  background: transparent; }
   .tramites .detalle:hover {
     color: #00b8b0; }
-.tramites button {
-  color: red; }
 .tramites .flecha-abajo {
   height: 0.6rem;
   width: 0.6rem;
   padding: 0; }
+.tramites .docum-mini {
+  height: 2.5rem;
+  width: 2rem;
+  margin-left: 1rem;
+  margin-right: 0.4rem; }
+.tramites .margen {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem; }
+.tramites .margen-top {
+  margin-top: 3rem; }
+.tramites input[type="checkbox"] {
+  margin-top: 2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.1rem; }
+.tramites .editar-form-fecha {
+  border: 1px solid #a9abac; }
 
 .detalle-status .fuente-fecha {
   color: #a9abac;
   font-size: 0.9rem; }
 
-.pagBoton {
-  border: none;
-  width: 2rem;
-  height: 30px;
-  background: Transparent; }
+.container-fluid .margen {
+  margin-top: 2rem; }
 
 .paginacion {
   background: #ffffff; }
+  .paginacion .pagBoton {
+    border: none;
+    width: 2rem;
+    height: 30px;
+    background: Transparent; }
+  .paginacion .img-pag {
+    width: 0.7rem;
+    height: 0.7rem; }
+
+.nav-serv-pub {
+  background: #a9abac;
+  width: 15%;
+  float: left;
+  height: 100%;
+  position: fixed;
+  border-right: 0.1rem solid #a9abac; }
+  .nav-serv-pub li {
+    margin: 0;
+    padding-top: 0.9rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    align-items: center;
+    height: 3.5rem;
+    border-bottom: 0.1rem solid #f7f7f7;
+    list-style: none; }
+    .nav-serv-pub li:hover {
+      background: #f7f7f7; }
+    .nav-serv-pub li a {
+      text-decoration: none;
+      text-align: center;
+      color: #333840; }
+
+.ancho {
+  margin-left: 15%;
+  width: 85%;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.contenedor-menu {
+  background-color: #a9abac; }
+
+.notes {
+  background-color: #ffffff;
+  padding: 1rem; }
+  .notes .notesContent {
+    border-radius: 0;
+    border: 1px solid #333840;
+    overflow-y: scroll;
+    height: 13rem;
+    width: 30rem;
+    padding-left: 0.5rem;
+    padding-top: 0.4rem; }
+  .notes .fondo {
+    background-color: #ca1474;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    color: #ffffff;
+    height: 2.5rem; }
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center; }
+  .modal div {
+    background-color: white;
+    border-radius: 0.3rem; }
+    .modal div .modalFooter {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0rem 1rem 1rem 1rem; }
+
+.comboLabel {
+  margin-bottom: 1rem; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: auto; }
 
 .borrar {
   border: 1px solid red; }
