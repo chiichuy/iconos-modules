@@ -6910,9 +6910,6 @@ footer {
 .content {
   padding-top: 2rem; }
 
-.container {
-  padding-top: 2rem; }
-
 .lista {
   text-align: left;
   margin: 0;
@@ -7083,7 +7080,8 @@ h6.Campos {
     border: none;
     background-color: #a9abac;
     color: #333840;
-    font-style: italic; }
+    font-style: italic;
+    padding-left: 0.5rem; }
   .form-tramites div input::placeholder {
     color: #333840; }
   .form-tramites div button {
@@ -7104,29 +7102,102 @@ h6.Campos {
   height: 2rem;
   width: auto;
   border: none;
-  background: transparent;
-  color: red; }
+  background: transparent; }
   .tramites .detalle:hover {
     color: #00b8b0; }
-.tramites button {
-  color: red; }
 .tramites .flecha-abajo {
   height: 0.6rem;
   width: 0.6rem;
   padding: 0; }
+.tramites .docum-mini {
+  height: 2.5rem;
+  width: 2rem;
+  margin-left: 1rem;
+  margin-right: 0.4rem; }
+.tramites .margen {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem; }
 
 .detalle-status .fuente-fecha {
   color: #a9abac;
   font-size: 0.9rem; }
 
-.pagBoton {
-  border: none;
-  width: 2rem;
-  height: 30px;
-  background: Transparent; }
+.container-fluid .margen {
+  margin-top: 2rem; }
 
 .paginacion {
   background: #ffffff; }
+  .paginacion .pagBoton {
+    border: none;
+    width: 2rem;
+    height: 30px;
+    background: Transparent; }
+  .paginacion .img-pag {
+    width: 0.7rem;
+    height: 0.7rem; }
+
+.nav-serv-pub {
+  background: #a9abac;
+  width: 15%;
+  float: left;
+  height: 100%;
+  position: fixed;
+  border-right: 0.1rem solid #a9abac; }
+  .nav-serv-pub li {
+    margin: 0;
+    padding-top: 0.9rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    align-items: center;
+    height: 3.5rem;
+    border-bottom: 0.1rem solid #f7f7f7;
+    list-style: none; }
+    .nav-serv-pub li:hover {
+      background: #f7f7f7; }
+    .nav-serv-pub li a {
+      text-decoration: none;
+      text-align: center;
+      color: #333840; }
+
+.ancho {
+  margin-left: 15%;
+  width: 85%;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.contenedor-menu {
+  background-color: #a9abac; }
+
+.notes {
+  background-color: #ffffff;
+  padding: 1rem; }
+  .notes .notesContent {
+    border: 0.1rem solid #a9abac;
+    overflow-y: scroll;
+    height: 13rem;
+    width: 30rem; }
+
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center; }
+  .modal div {
+    background-color: white; }
+    .modal div .modalFooter {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0px 20px 20px 20px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: auto; }
 
 .borrar {
   border: 1px solid red; }

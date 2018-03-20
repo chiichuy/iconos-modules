@@ -1,9 +1,8 @@
 .content {
   padding-top: 2rem;
 }
- .container{
-   padding-top: 2rem;
- }
+
+
 
 .lista {
   text-align: left;
@@ -246,6 +245,7 @@ h6.Campos {
            background-color:$light;
            color:$dark;
            font-style:italic;
+           padding-left: 0.5rem;
          }
          input::placeholder{
            color:$dark;
@@ -276,20 +276,27 @@ h6.Campos {
     width:auto;
     border:none;
     background: transparent;
-    color:red;
     &:hover {
       color:$primary;
     }
   }
-  button{
-    color:red;
-  }
-
 
   .flecha-abajo{
     height: 0.6rem;
     width:0.6rem;
     padding: 0;
+  }
+
+  .docum-mini{
+    height: 2.5rem;
+    width:2rem;
+    margin-left: 1rem;
+    margin-right: 0.4rem;
+  }
+
+  .margen{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
   }
 }
 
@@ -301,22 +308,105 @@ h6.Campos {
   }
 }
 
-
-
-.pagBoton{
-  border:none;
-  width:2rem;
-  height:30px;
-  background:Transparent;
-
+.container-fluid{
+  .margen{
+    margin-top: 2rem;
+  }
 }
+
 
 .paginacion{
   background:$contenedor-color;
+
+  .pagBoton{
+    border:none;
+    width:2rem;
+    height:30px;
+    background:Transparent;
+  }
+
+  .img-pag{
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+
 }
 
+.nav-serv-pub{
+  background: $light;
+  width: 15%;
+  float: left;
+  height:100%;
+  position: fixed;
+  border-right: 0.1rem solid $light;
+    li{
+      margin: 0;
+      padding-top: 0.9rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      align-items: center;
+      height: 3.5rem;
 
+      border-bottom: 0.1rem solid $body-bg;
+      list-style: none;
+      &:hover{
+        background: $body-bg;
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: $dark;
+      }
+    }
+}
 
+.ancho{
+  margin-left: 15%;
+  width: 85%;
+  padding-left:2rem;
+  padding-right: 2rem;
+}
+
+.contenedor-menu{
+  background-color: $light;
+}
+
+.notes {
+  background-color: $subMenu;
+  padding: 1rem;
+
+  .notesContent {
+    border:0.1rem solid $light;
+    overflow-y: scroll;
+    height: 13rem;
+    width: 30rem;
+  }
+
+}
+
+.modal {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  display:flex;
+  background-color: rgba(0,0,0, 0.5);
+  justify-content: center;
+  align-items: center;
+
+  div {
+  background-color: white;
+    .modalFooter {
+      display:flex;
+      justify-content: flex-end;
+      padding:0px 20px 20px 20px;
+    }
+
+  }
+
+}
 
 
 

@@ -22,7 +22,6 @@ $theme-colors: (
 );
 
 
-
 $body-color: $dark;
 $body-bg: #f7f7f7;
 $contenedor-color:#ffffff;
@@ -30,14 +29,19 @@ $bg-light: rgba($light, 0.5);
 $title-color: $primary;
 $informacion-color:$success;
 
-
 @import 'bootstrap/bootstrap';
 @import "bootstrap/bootstrap-reboot";
-
 
 @import 'custom/header';
 @import 'custom/footer';
 @import 'custom/content';
+
+
+body{
+  margin:0;
+  padding: 0;
+  height: auto;
+}
 
 .borrar{
   border: 1px solid red;
@@ -46,6 +50,7 @@ $informacion-color:$success;
 .borrarr{
   border: 1px solid black;
 }
+
 
 .borde-color{
   border: 1px solid $primary;
