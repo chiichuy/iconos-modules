@@ -7117,6 +7117,15 @@ h6.Campos {
 .tramites .margen {
   margin-left: 0.1rem;
   margin-right: 0.1rem; }
+.tramites .margen-top {
+  margin-top: 3rem; }
+.tramites input[type="checkbox"] {
+  margin-top: 2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.1rem; }
+.tramites .editar-form-fecha {
+  border: 1px solid #a9abac; }
 
 .detalle-status .fuente-fecha {
   color: #a9abac;
@@ -7172,27 +7181,42 @@ h6.Campos {
   background-color: #ffffff;
   padding: 1rem; }
   .notes .notesContent {
-    border: 0.1rem solid #a9abac;
+    border-radius: 0;
+    border: 1px solid #333840;
     overflow-y: scroll;
     height: 13rem;
-    width: 30rem; }
+    width: 30rem;
+    padding-left: 0.5rem;
+    padding-top: 0.4rem; }
+  .notes .fondo {
+    background-color: #ca1474;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    color: #ffffff;
+    height: 2.5rem; }
 
 .modal {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   right: 0;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center; }
   .modal div {
-    background-color: white; }
+    background-color: white;
+    border-radius: 0.3rem; }
     .modal div .modalFooter {
       display: flex;
       justify-content: flex-end;
-      padding: 0px 20px 20px 20px; }
+      padding: 0rem 1rem 1rem 1rem; }
+
+.comboLabel {
+  margin-bottom: 1rem; }
 
 body {
   margin: 0;
