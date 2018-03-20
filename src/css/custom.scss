@@ -31,8 +31,22 @@ $title-color: $primary;
 $informacion-color:$success;
 
 
-@import 'bootstrap/bootstrap';
+@media print {
+  html,
+  body,
+  .content,
+  .container {
+    background-color: white;
+  }
+
+  hr {
+    border: none;
+  }
+
+}
+
 @import "bootstrap/bootstrap-reboot";
+@import 'bootstrap/bootstrap';
 
 
 @import 'custom/header';
@@ -41,6 +55,10 @@ $informacion-color:$success;
 
 .borrar{
   border: 1px solid red;
+}
+
+hr {
+  border-color: $light
 }
 
 .borrarr{
@@ -58,6 +76,40 @@ $informacion-color:$success;
 }
 .col.title p {
   font-size: 0.8rem;
+}
+
+.modal {
+  background-color: rgba(0,0,0,0.6);
+
+  &.show {
+    display: block;
+  }
+
+  .loading {
+    background-color: transparent;
+    border:none;
+    margin:auto;
+  }
+
+  img.logo {
+    height: 5rem;
+    width: 5rem;
+
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
+    }
 }
 
 
@@ -81,6 +133,79 @@ $informacion-color:$success;
   border-color: $dark;
 }
 
+nav.navbar.sticky-top.navbar-light.tramiteMenu {
+  top:2.4rem;
 
+  .navbar-brand {
+    cursor: pointer;
+  }
+}
+
+.card-header.bg-dark {
+  border: 1px solid $dark;
+
+  img.triangulos {
+    height: 2rem;
+    transform: rotate(180deg);
+  }
+
+  .folio {
+    color: $dark;
+    font-size: 1.5rem;
+    max-height: 3rem;
+
+
+    &::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 1.5rem 1rem;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$primary; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+
+    &.bg-warning::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 1.5rem 1rem;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$warning; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+
+    &.bg-secondary::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 1.5rem 1rem;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$secondary; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+
+    &.bg-success::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 1.5rem 1rem;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$success; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+  }
+
+
+
+}
 
 
