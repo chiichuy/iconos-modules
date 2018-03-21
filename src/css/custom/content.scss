@@ -222,6 +222,16 @@ h6.Campos {
   }
 }
 
+.contenedorDetalle{
+  border:1px solid $light;
+  padding-left: 1rem;
+}
+
+
+.comboLabel {
+  margin-bottom: 1rem;
+}
+
 .select-tramites{
   height: 2.5rem;
   width:15rem;
@@ -229,10 +239,7 @@ h6.Campos {
 }
 
 
-.contenedorDetalle{
-  border:1px solid $light;
-  padding-left: 1rem;
-}
+
 
 .form-tramites{
    div{
@@ -323,11 +330,7 @@ h6.Campos {
   }
 }
 
-.container-fluid{
-  .margen{
-    margin-top: 2rem;
-  }
-}
+
 
 
 .paginacion{
@@ -441,8 +444,3 @@ h6.Campos {
 }
 
 
-
-.comboLabel {
-  margin-bottom: 1rem;
-
-}

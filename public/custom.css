@@ -7062,14 +7062,17 @@ h6.Campos {
   -moz-appearance: none;
   -webkit-appearance: none; }
 
+.contenedorDetalle {
+  border: 1px solid #a9abac;
+  padding-left: 1rem; }
+
+.comboLabel {
+  margin-bottom: 1rem; }
+
 .select-tramites {
   height: 2.5rem;
   width: 15rem;
   background: #ffffff; }
-
-.contenedorDetalle {
-  border: 1px solid #a9abac;
-  padding-left: 1rem; }
 
 .form-tramites div {
   background: #a9abac; }
@@ -7130,9 +7133,6 @@ h6.Campos {
 .detalle-status .fuente-fecha {
   color: #a9abac;
   font-size: 0.9rem; }
-
-.container-fluid .margen {
-  margin-top: 2rem; }
 
 .paginacion {
   background: #ffffff; }
@@ -7214,9 +7214,6 @@ h6.Campos {
       display: flex;
       justify-content: flex-end;
       padding: 0rem 1rem 1rem 1rem; }
-
-.comboLabel {
-  margin-bottom: 1rem; }
 
 body {
   margin: 0;
