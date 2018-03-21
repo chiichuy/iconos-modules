@@ -6909,8 +6909,7 @@ a.text-link:hover, a.text-link:focus {
     color: #00b8b0; }
 
 .tramitensNav {
-  padding: 0;
-  margin-bottom: 1rem; }
+  padding: 0; }
   .tramitensNav .vertical {
     border: 0px solid white;
     border-left-width: 1px;
