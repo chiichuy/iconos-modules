@@ -439,7 +439,10 @@ h6.Campos {
 //  }
 //
 //}
-
+.rounded-bottom {
+  border-bottom-left-radius: 1.5rem !important;
+  border-bottom-right-radius: 1.5rem !important;
+}
 
 
 .comboLabel {

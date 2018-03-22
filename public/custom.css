@@ -7244,6 +7244,10 @@ h6.Campos {
     color: #ffffff;
     height: 2.5rem; }
 
+.rounded-bottom {
+  border-bottom-left-radius: 1.5rem !important;
+  border-bottom-right-radius: 1.5rem !important; }
+
 .comboLabel {
   margin-bottom: 1rem; }
 
