@@ -6949,10 +6949,14 @@ a.text-link:hover, a.text-link:focus {
 footer {
   background-color: rgba(169, 171, 172, 0.5);
   height: 10rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  position: fixed; }
   footer img {
     height: 3.5rem;
     width: auto; }
+
+.ok {
+  bottom: auto; }
 
 .content {
   padding-top: 2rem; }
@@ -7109,14 +7113,21 @@ h6.Campos {
   -moz-appearance: none;
   -webkit-appearance: none; }
 
+.contenedorDetalle {
+  border: 1px solid #a9abac;
+  padding-left: 1rem; }
+
+.busqueda-avanzada .comboLabel {
+  padding-left: 21%;
+  margin-bottom: 1rem; }
+.busqueda-avanzada select {
+  width: 23rem;
+  height: 2rem; }
+
 .select-tramites {
   height: 2.5rem;
   width: 15rem;
   background: #ffffff; }
-
-.contenedorDetalle {
-  border: 1px solid #a9abac;
-  padding-left: 1rem; }
 
 .form-tramites div {
   background: #a9abac; }
@@ -7165,34 +7176,43 @@ h6.Campos {
   margin-left: 0.1rem;
   margin-right: 0.1rem; }
 .tramites .margen-top {
-  margin-top: 3rem; }
+  margin-top: 2rem; }
 .tramites input[type="checkbox"] {
   margin-top: 2rem;
   width: 1rem;
   height: 1rem;
   border-radius: 0.1rem; }
 .tramites .editar-form-fecha {
-  border: 1px solid #a9abac; }
+  border: 1px solid #a9abac;
+  height: 2rem; }
+.tramites form .largoBoton {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
 
 .detalle-status .fuente-fecha {
   color: #a9abac;
   font-size: 0.9rem; }
 
-.container-fluid .margen {
-  margin-top: 2rem; }
-
 .paginacion {
-  background: #ffffff; }
+  background: #ffffff;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
   .paginacion .pagBoton {
     border: none;
     width: 2rem;
     height: 30px;
-    background: Transparent; }
+    background: Transparent;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; }
   .paginacion .img-pag {
     width: 0.7rem;
     height: 0.7rem; }
 
 .nav-serv-pub {
+  margin: 0;
   background: #a9abac;
   width: 15%;
   float: left;
@@ -7229,10 +7249,10 @@ h6.Campos {
   padding: 1rem; }
   .notes .notesContent {
     border-radius: 0;
-    border: 1px solid #333840;
+    border: 1px solid #a9abac;
     overflow-y: scroll;
     height: 13rem;
-    width: 30rem;
+    width: auto;
     padding-left: 0.5rem;
     padding-top: 0.4rem; }
   .notes .fondo {
@@ -7247,9 +7267,6 @@ h6.Campos {
 .rounded-bottom {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
-
-.comboLabel {
-  margin-bottom: 1rem; }
 
 body {
   margin: 0;

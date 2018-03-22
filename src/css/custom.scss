@@ -22,6 +22,7 @@ $theme-colors: (
 );
 
 
+
 $body-color: $dark;
 $body-bg: #f7f7f7;
 $contenedor-color:#ffffff;
@@ -46,9 +47,10 @@ $informacion-color:$success;
 @import "bootstrap/bootstrap-reboot";
 @import 'bootstrap/bootstrap';
 
-@import 'custom/header';
-@import 'custom/footer';
-@import 'custom/content';
+@import './custom/header';
+@import './custom/footer';
+@import './custom/content';
+
 
 
 body{

@@ -65,6 +65,8 @@ hr {
   background-color: $dark;
 }
 
+
+
 h1.title,
 h2.title,
 h3.title,
@@ -113,6 +115,7 @@ h6.Campos {
 
 .input-search {
   width: 80%;
+
   input {
     text-align: center;
   }
@@ -222,6 +225,24 @@ h6.Campos {
   }
 }
 
+.contenedorDetalle{
+  border:1px solid $light;
+  padding-left: 1rem;
+}
+
+.busqueda-avanzada{
+  .comboLabel {
+    padding-left: 21%;
+    margin-bottom: 1rem;
+  }
+
+  select{
+    width: 23rem;
+    height: 2rem;
+  }
+
+}
+
 .select-tramites{
   height: 2.5rem;
   width:15rem;
@@ -229,10 +250,7 @@ h6.Campos {
 }
 
 
-.contenedorDetalle{
-  border:1px solid $light;
-  padding-left: 1rem;
-}
+
 
 .form-tramites{
    div{
@@ -300,7 +318,7 @@ h6.Campos {
   }
 
   .margen-top{
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   input[type="checkbox"]{
@@ -312,6 +330,16 @@ h6.Campos {
 
   .editar-form-fecha{
     border:1px solid $light;
+    height: 2rem;
+  }
+
+  form{
+    .largoBoton{
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
   }
 
 }
@@ -323,22 +351,23 @@ h6.Campos {
   }
 }
 
-.container-fluid{
-  .margen{
-    margin-top: 2rem;
-  }
-}
+
 
 
 .paginacion{
   background:$contenedor-color;
-
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   .pagBoton{
     border:none;
     width:2rem;
     height:30px;
     background:Transparent;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
+
 
   .img-pag{
     width: 0.7rem;
@@ -349,6 +378,7 @@ h6.Campos {
 }
 
 .nav-serv-pub{
+  margin: 0;
   background: $light;
   width: 15%;
   float: left;
@@ -393,10 +423,10 @@ h6.Campos {
 
   .notesContent {
     border-radius: 0;
-    border:1px solid $dark;
+    border:1px solid $light;
     overflow-y: scroll;
     height: 13rem;
-    width: 30rem;
+    width: auto;
     padding-left:0.5rem;
     padding-top:0.4rem;
   }
@@ -413,6 +443,8 @@ h6.Campos {
   }
 
 }
+
+
 //
 //.modal {
 //  position: absolute;
@@ -444,8 +476,3 @@ h6.Campos {
   border-bottom-right-radius: 1.5rem !important;
 }
 
-
-.comboLabel {
-  margin-bottom: 1rem;
-
-}
