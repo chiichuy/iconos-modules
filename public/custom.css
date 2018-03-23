@@ -7159,6 +7159,8 @@ h6.Campos {
   background: transparent; }
   .tramites .detalle:hover {
     color: #00b8b0; }
+  .tramites .detalle:focus {
+    outline: none; }
 .tramites .flecha-abajo {
   height: 0.6rem;
   width: 0.6rem;

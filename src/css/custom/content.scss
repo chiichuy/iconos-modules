@@ -265,8 +265,10 @@ h6.Campos {
            font-style:italic;
            padding-left: 0.5rem;
          }
+
          input::placeholder{
            color:$dark;
+
          }
          button {
            border-radius:0;
@@ -275,6 +277,7 @@ h6.Campos {
            width:3rem;
          }
    }
+
 }
 
 .tramites {
@@ -296,6 +299,9 @@ h6.Campos {
     background: transparent;
     &:hover {
       color: $primary;
+    }
+    &:focus{
+      outline: none;
     }
   }
 
