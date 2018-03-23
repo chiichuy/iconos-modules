@@ -6949,14 +6949,10 @@ a.text-link:hover, a.text-link:focus {
 footer {
   background-color: rgba(169, 171, 172, 0.5);
   height: 10rem;
-  margin-top: 2rem;
-  position: fixed; }
+  margin-top: 2rem; }
   footer img {
     height: 3.5rem;
     width: auto; }
-
-.ok {
-  bottom: auto; }
 
 .content {
   padding-top: 2rem; }
@@ -7270,8 +7266,7 @@ h6.Campos {
 
 body {
   margin: 0;
-  padding: 0;
-  height: auto; }
+  padding: 0; }
 
 .borrar {
   border: 1px solid red; }
