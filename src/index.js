@@ -9,6 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 // import './css/custom.scss'
 
+import './custom.css'
 
 export {default as Button } from './components/buttons/Button'
 export {default as ButtonSuccess } from './components/buttons/ButtonSuccess'
