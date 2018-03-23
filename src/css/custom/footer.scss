@@ -1,9 +1,9 @@
 footer {
   background-color: $bg-light;
-  height: 10rem;
+  height: 12rem;
   margin-top: 2rem;
-  position:fixed;
-
+ // position: fixed;
+ // bottom: 0;
 
   img {
     height: 3.5rem;
@@ -12,6 +12,3 @@ footer {
 
 }
 
-.ok{
-  bottom: auto;
-}
