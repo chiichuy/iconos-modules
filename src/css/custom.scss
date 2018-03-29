@@ -50,19 +50,33 @@ $informacion-color:$success;
 @import './custom/header';
 @import './custom/footer';
 @import './custom/content';
+@import url('https://fonts.googleapis.com/css?family=Chicle');
 
 
-body{
-  margin:0;
+@import "../../node_modules/sass-font-face/_font-face.scss";
+
+//@font-face {
+//  font-family: '',cursive;
+//  src: local('RadomirTinkovGilroyBlack'), url("../fuentes/RadomirTinkovGilroyBlack.otf") format("opentype");
+//}
+
+
+/*@font-face {
+  font-family: '',cursive;
+  src: local('LayarBahteraUniversalDoomsday'), url("../fuentes/LayarBahteraUniversalDoomsday.ttf") format("truetype");
+}*/
+
+body {
+  margin: 0;
   padding: 0;
 }
 
 .borrar{
-  border: 1px solid red;
+  border: 1px solid pink;
 }
 
 hr {
-  border-color: $light
+  border-color: $light;
 }
 
 .borrarr{

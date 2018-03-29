@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Chicle");
 @media print {
   html,
   body,
@@ -283,19 +284,19 @@ template {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
+  --blue: #007bff ;
+  --indigo: #6610f2 ;
+  --purple: #6f42c1 ;
+  --pink: #e83e8c ;
+  --red: #dc3545 ;
+  --orange: #fd7e14 ;
+  --yellow: #ffc107 ;
+  --green: #28a745 ;
+  --teal: #20c997 ;
+  --cyan: #17a2b8 ;
+  --white: #fff ;
+  --gray: #6c757d ;
+  --gray-dark: #343a40 ;
   --primary: #00b8b0;
   --secondary: #ca1474;
   --success: #83c442;
@@ -7188,6 +7189,11 @@ h6.Campos {
   padding-right: 3.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
+.tramites .rotarImagen {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
 
 .detalle-status .fuente-fecha {
   color: #a9abac;
@@ -7219,7 +7225,6 @@ h6.Campos {
   border-right: 0.1rem solid #a9abac; }
   .nav-serv-pub li {
     margin: 0;
-    padding-top: 0.9rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     align-items: center;
@@ -7232,6 +7237,9 @@ h6.Campos {
       text-decoration: none;
       text-align: center;
       color: #333840; }
+  .nav-serv-pub h5 {
+    padding-top: 1rem;
+    height: 3.5rem; }
 
 .ancho {
   margin-left: 15%;
@@ -7266,12 +7274,16 @@ h6.Campos {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
 
+/*@font-face {
+  font-family: '',cursive;
+  src: local('LayarBahteraUniversalDoomsday'), url("../fuentes/LayarBahteraUniversalDoomsday.ttf") format("truetype");
+}*/
 body {
   margin: 0;
   padding: 0; }
 
 .borrar {
-  border: 1px solid red; }
+  border: 1px solid pink; }
 
 hr {
   border-color: #a9abac; }

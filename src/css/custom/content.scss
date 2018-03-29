@@ -76,6 +76,7 @@ h6.title {
   color: $title-color;
 }
 
+
 h1.informacion,
 h2.informacion,
 h3.informacion,
@@ -348,6 +349,13 @@ h6.Campos {
     }
   }
 
+  .rotarImagen{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
 }
 
 .detalle-status{
@@ -393,7 +401,6 @@ h6.Campos {
   border-right: 0.1rem solid $light;
     li{
       margin: 0;
-      padding-top: 0.9rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       align-items: center;
@@ -410,6 +417,11 @@ h6.Campos {
         color: $dark;
       }
     }
+
+  h5{
+    padding-top: 1rem;
+    height: 3.5rem;
+  }
 }
 
 .ancho{
