@@ -14,7 +14,7 @@
 
 .navbar .form-inline {
   background-color: $bg-light;
-
+  width: auto;
 
   input {
     background-color: transparent;
@@ -35,6 +35,7 @@
     border: none;
     color: white;
     background-color: transparent;
+    border-radius: 0;
 
     img {
       height: 15px;
@@ -54,9 +55,10 @@
   width: 100%;
 
   img.colors {
-    margin-top:-1.4rem;
-    height: 0.5rem;
+  //  margin-top:-1.4rem;
+    height: 0.4rem;
     width: 100%;
+    position: fixed;
   }
 
   .navbar{

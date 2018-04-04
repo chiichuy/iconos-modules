@@ -2,6 +2,24 @@
   padding-top: 2rem;
 }
 
+@media (max-width: 575.98px) {
+  .content {
+    padding-top: 8rem;
+  }
+
+}
+
+@media (min-width: 580px) and (max-width: 980px) {
+  .content {
+    padding-top: 4rem;
+  }
+}
+
+.content-busqueda {
+  padding-top: 3rem;
+}
+
+
 
 
 .lista {
@@ -60,11 +78,13 @@ hr {
 }
 
 
-
 .SubTitulos {
   background-color: $dark;
 }
 
+.letra-chica{
+  font-size: 0.8rem;
+}
 
 
 h1.title,
@@ -76,6 +96,10 @@ h6.title {
   color: $title-color;
 }
 
+.letra-doomsday{
+  font-family:'Universal Doomsday';
+}
+
 
 h1.informacion,
 h2.informacion,
@@ -84,6 +108,7 @@ h4.informacion,
 h5.informacion,
 h6.informacion {
   color: $informacion-color;
+  font-family:'Universal Doomsday';
 }
 
 h1.SubMenu,
@@ -462,33 +487,6 @@ h6.Campos {
 
 }
 
-
-//
-//.modal {
-//  position: absolute;
-//  top:0;
-//  left: 0;
-//  bottom: 0;
-//  right: 0;
-//  display:flex;
-//  background-color: rgba(0,0,0, 0.5);
-//  justify-content: center;
-//  align-items: center;
-//
-//
-//  div {
-//  background-color: white;
-//  border-radius: 0.3rem;
-//    .modalFooter {
-//      display:flex;
-//      justify-content: flex-end;
-//      padding:0rem 1rem 1rem 1rem;
-//
-//    }
-//
-//  }
-//
-//}
 .rounded-bottom {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important;

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Chicle");
 @media print {
   html,
   body,
@@ -6880,7 +6879,8 @@ a.text-link:hover, a.text-link:focus {
   background-color: #f7f7f7; }
 
 .navbar .form-inline {
-  background-color: rgba(169, 171, 172, 0.5); }
+  background-color: rgba(169, 171, 172, 0.5);
+  width: auto; }
   .navbar .form-inline input {
     background-color: transparent;
     border: none;
@@ -6893,7 +6893,8 @@ a.text-link:hover, a.text-link:focus {
   .navbar .form-inline button {
     border: none;
     color: white;
-    background-color: transparent; }
+    background-color: transparent;
+    border-radius: 0; }
     .navbar .form-inline button img {
       height: 15px; }
 
@@ -6903,9 +6904,9 @@ a.text-link:hover, a.text-link:focus {
   top: 0px;
   width: 100%; }
   .navbar-fixed-top img.colors {
-    margin-top: -1.4rem;
-    height: 0.5rem;
-    width: 100%; }
+    height: 0.4rem;
+    width: 100%;
+    position: fixed; }
   .navbar-fixed-top .navbar div a:hover {
     color: #00b8b0; }
 
@@ -6949,14 +6950,26 @@ a.text-link:hover, a.text-link:focus {
 
 footer {
   background-color: rgba(169, 171, 172, 0.5);
-  height: 12rem;
-  margin-top: 2rem; }
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   footer img {
     height: 3.5rem;
     width: auto; }
 
 .content {
   padding-top: 2rem; }
+
+@media (max-width: 575.98px) {
+  .content {
+    padding-top: 8rem; } }
+@media (min-width: 580px) and (max-width: 980px) {
+  .content {
+    padding-top: 4rem; } }
+.content-busqueda {
+  padding-top: 3rem; }
 
 .lista {
   text-align: left;
@@ -6998,6 +7011,9 @@ hr {
 .SubTitulos {
   background-color: #333840; }
 
+.letra-chica {
+  font-size: 0.8rem; }
+
 h1.title,
 h2.title,
 h3.title,
@@ -7006,13 +7022,17 @@ h5.title,
 h6.title {
   color: #00b8b0; }
 
+.letra-doomsday {
+  font-family: 'Universal Doomsday'; }
+
 h1.informacion,
 h2.informacion,
 h3.informacion,
 h4.informacion,
 h5.informacion,
 h6.informacion {
-  color: #83c442; }
+  color: #83c442;
+  font-family: 'Universal Doomsday'; }
 
 h1.SubMenu,
 h2.SubMenu,
@@ -7274,16 +7294,8 @@ h6.Campos {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
 
-/*@font-face {
-  font-family: '',cursive;
-  src: local('LayarBahteraUniversalDoomsday'), url("../fuentes/LayarBahteraUniversalDoomsday.ttf") format("truetype");
-}*/
-body {
-  margin: 0;
-  padding: 0; }
-
 .borrar {
-  border: 1px solid pink; }
+  border: 1px solid red; }
 
 hr {
   border-color: #a9abac; }
