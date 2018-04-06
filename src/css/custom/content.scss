@@ -271,7 +271,7 @@ h6.Campos {
 
 .select-tramites{
   height: 2.5rem;
-  width:15rem;
+  width:16.5rem;
   background:$contenedor-color;
 }
 
@@ -279,30 +279,31 @@ h6.Campos {
 
 
 .form-tramites{
-   div{
-     background: $light;
-         input{
-           height: 2.5rem;
-           width:15rem;
-           border-radius:0;
-           border:none;
-           background-color:$light;
-           color:$dark;
-           font-style:italic;
-           padding-left: 0.5rem;
-         }
 
-         input::placeholder{
-           color:$dark;
 
-         }
-         button {
-           border-radius:0;
-           background-color:$light;
-           height: 2.5rem;
-           width:3rem;
-         }
-   }
+    background: $light;
+    input {
+      height: 2.5rem;
+      width: 15rem;
+      border-radius: 0;
+      border: none;
+      background-color: $light;
+      color: $dark;
+      font-style: italic;
+      padding-left: 0.5rem;
+    }
+
+    input::placeholder {
+      color: $dark;
+    }
+
+    button {
+      border-radius: 0;
+      background-color: $light;
+      height: 2.5rem;
+      width: 3rem;
+    }
+
 
 }
 
@@ -449,6 +450,48 @@ h6.Campos {
   }
 }
 
+
+
+@media (max-width: 800px) {
+  .espaciado-arriba{
+    margin-top: 11rem;
+    display: contents;
+    border: 1px solid red;
+  }
+
+  .nav-serv-pub{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height:17.5%;
+
+    li{
+      margin: 0;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      align-items: center;
+      height: 3.5rem;
+      border-bottom: 0.1rem solid $body-bg;
+      list-style: none;
+      &:hover{
+        background: $body-bg;
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: $dark;
+      }
+    }
+
+    h5{
+      background: $light;
+      padding-top: 1rem;
+      height: 3.5rem;
+    }
+  }
+
+}
+
 .ancho{
   margin-left: 15%;
   width: 85%;
@@ -491,4 +534,6 @@ h6.Campos {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important;
 }
+
+
 
