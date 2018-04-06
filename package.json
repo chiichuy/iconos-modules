@@ -2,9 +2,11 @@
   "name": "iconos-modules",
   "version": "0.1.1",
   "dependencies": {
+    "format": "^0.2.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "sass-font-face": "^1.0.1"
   },
   "scripts": {
     "start": "PORT=3131 react-scripts start",

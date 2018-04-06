@@ -1,7 +1,10 @@
 footer {
   background-color: $bg-light;
-  height: 12rem;
+  height: auto;
+  box-sizing: border-box;
   margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   img {
     height: 3.5rem;
