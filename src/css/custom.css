@@ -7143,12 +7143,12 @@ h6.Campos {
 
 .select-tramites {
   height: 2.5rem;
-  width: 15rem;
+  width: 16.5rem;
   background: #ffffff; }
 
-.form-tramites div {
+.form-tramites {
   background: #a9abac; }
-  .form-tramites div input {
+  .form-tramites input {
     height: 2.5rem;
     width: 15rem;
     border-radius: 0;
@@ -7157,9 +7157,9 @@ h6.Campos {
     color: #333840;
     font-style: italic;
     padding-left: 0.5rem; }
-  .form-tramites div input::placeholder {
+  .form-tramites input::placeholder {
     color: #333840; }
-  .form-tramites div button {
+  .form-tramites button {
     border-radius: 0;
     background-color: #a9abac;
     height: 2.5rem;
@@ -7261,6 +7261,35 @@ h6.Campos {
     padding-top: 1rem;
     height: 3.5rem; }
 
+@media (max-width: 800px) {
+  .espaciado-arriba {
+    margin-top: 11rem;
+    display: contents;
+    border: 1px solid red; }
+
+  .nav-serv-pub {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 17.5%; }
+    .nav-serv-pub li {
+      margin: 0;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      align-items: center;
+      height: 3.5rem;
+      border-bottom: 0.1rem solid #f7f7f7;
+      list-style: none; }
+      .nav-serv-pub li:hover {
+        background: #f7f7f7; }
+      .nav-serv-pub li a {
+        text-decoration: none;
+        text-align: center;
+        color: #333840; }
+    .nav-serv-pub h5 {
+      background: #a9abac;
+      padding-top: 1rem;
+      height: 3.5rem; } }
 .ancho {
   margin-left: 15%;
   width: 85%;
