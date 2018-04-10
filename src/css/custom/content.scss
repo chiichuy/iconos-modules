@@ -96,9 +96,10 @@ h6.title {
   color: $title-color;
 }
 
-.letra-doomsday{
+/*.letra-doomsday{
   font-family:'Universal Doomsday';
-}
+}*/
+
 
 
 h1.informacion,
@@ -108,7 +109,7 @@ h4.informacion,
 h5.informacion,
 h6.informacion {
   color: $informacion-color;
-  font-family:'Universal Doomsday';
+  font-family: 'Quicksand',Serif;
 }
 
 h1.SubMenu,
@@ -279,22 +280,21 @@ h6.Campos {
 
 
 .form-tramites{
-
-
     background: $light;
+
     input {
       height: 2.5rem;
-      width: 15rem;
+      width: 16rem;
       border-radius: 0;
       border: none;
-      background-color: $light;
+      background-color:  $light; //li
       color: $dark;
       font-style: italic;
       padding-left: 0.5rem;
     }
 
     input::placeholder {
-      color: $dark;
+      color: $placeholder;
     }
 
     button {
@@ -303,8 +303,33 @@ h6.Campos {
       height: 2.5rem;
       width: 3rem;
     }
+}
 
+.form-tramites-continuar{
+  background: $light;
+  height: 1.7rem;
+  margin-top: 1.5rem;
+  input {
+    height: 2.5rem;
+    width: 16rem;
+    border-radius: 0;
+    border: none;
+    background-color:  $light; //li
+    color: $dark;
+    font-style: italic;
+    padding-left: 0.5rem;
+  }
 
+  input::placeholder {
+    color: $placeholder;
+  }
+
+  button {
+    border-radius: 0;
+    background-color: $light;
+    height: 2.5rem;
+    width: 3rem;
+  }
 }
 
 .tramites {
@@ -419,19 +444,18 @@ h6.Campos {
 
 .nav-serv-pub{
   margin: 0;
-  background: $light;
+  background: $dark;
   width: 15%;
   float: left;
   height:100%;
   position: fixed;
-  border-right: 0.1rem solid $light;
+  border-right: 0.1rem solid $primary;
     li{
       margin: 0;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       align-items: center;
       height: 3.5rem;
-
       border-bottom: 0.1rem solid $body-bg;
       list-style: none;
       &:hover{
@@ -440,21 +464,29 @@ h6.Campos {
       a {
         text-decoration: none;
         text-align: center;
-        color: $dark;
+        color: white;
+        &:hover{
+          color: $dark;
+        }
       }
     }
 
   h5{
     padding-top: 1rem;
     height: 3.5rem;
+
   }
+}
+//color para cambio de letra sen serv-pub
+.letra-dark{
+  color:$dark;
 }
 
 
 
 @media (max-width: 800px) {
   .espaciado-arriba{
-    margin-top: 11rem;
+    margin-top: 12rem;
     display: contents;
     border: 1px solid red;
   }

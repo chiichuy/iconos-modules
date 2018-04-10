@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
 @media print {
   html,
   body,
@@ -6896,7 +6899,8 @@ a.text-link:hover, a.text-link:focus {
     background-color: transparent;
     border-radius: 0; }
     .navbar .form-inline button img {
-      height: 15px; }
+      font-family: Quicksand,Serif;
+      height: 17px; }
 
 .navbar-fixed-top {
   z-index: 10000;
@@ -7022,9 +7026,9 @@ h5.title,
 h6.title {
   color: #00b8b0; }
 
-.letra-doomsday {
-  font-family: 'Universal Doomsday'; }
-
+/*.letra-doomsday{
+  font-family:'Universal Doomsday';
+}*/
 h1.informacion,
 h2.informacion,
 h3.informacion,
@@ -7032,7 +7036,7 @@ h4.informacion,
 h5.informacion,
 h6.informacion {
   color: #83c442;
-  font-family: 'Universal Doomsday'; }
+  font-family: 'Quicksand',Serif; }
 
 h1.SubMenu,
 h2.SubMenu,
@@ -7150,7 +7154,7 @@ h6.Campos {
   background: #a9abac; }
   .form-tramites input {
     height: 2.5rem;
-    width: 15rem;
+    width: 16rem;
     border-radius: 0;
     border: none;
     background-color: #a9abac;
@@ -7158,8 +7162,29 @@ h6.Campos {
     font-style: italic;
     padding-left: 0.5rem; }
   .form-tramites input::placeholder {
-    color: #333840; }
+    color: #ffffff; }
   .form-tramites button {
+    border-radius: 0;
+    background-color: #a9abac;
+    height: 2.5rem;
+    width: 3rem; }
+
+.form-tramites-continuar {
+  background: #a9abac;
+  height: 1.7rem;
+  margin-top: 1.5rem; }
+  .form-tramites-continuar input {
+    height: 2.5rem;
+    width: 16rem;
+    border-radius: 0;
+    border: none;
+    background-color: #a9abac;
+    color: #333840;
+    font-style: italic;
+    padding-left: 0.5rem; }
+  .form-tramites-continuar input::placeholder {
+    color: #ffffff; }
+  .form-tramites-continuar button {
     border-radius: 0;
     background-color: #a9abac;
     height: 2.5rem;
@@ -7237,12 +7262,12 @@ h6.Campos {
 
 .nav-serv-pub {
   margin: 0;
-  background: #a9abac;
+  background: #333840;
   width: 15%;
   float: left;
   height: 100%;
   position: fixed;
-  border-right: 0.1rem solid #a9abac; }
+  border-right: 0.1rem solid #00b8b0; }
   .nav-serv-pub li {
     margin: 0;
     padding-left: 2.5rem;
@@ -7256,14 +7281,19 @@ h6.Campos {
     .nav-serv-pub li a {
       text-decoration: none;
       text-align: center;
-      color: #333840; }
+      color: white; }
+      .nav-serv-pub li a:hover {
+        color: #333840; }
   .nav-serv-pub h5 {
     padding-top: 1rem;
     height: 3.5rem; }
 
+.letra-dark {
+  color: #333840; }
+
 @media (max-width: 800px) {
   .espaciado-arriba {
-    margin-top: 11rem;
+    margin-top: 12rem;
     display: contents;
     border: 1px solid red; }
 
@@ -7322,6 +7352,15 @@ h6.Campos {
 .rounded-bottom {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
+
+.letra-gilroy {
+  font-family: 'Poppins', sans-serif; }
+
+.letra-espaciada {
+  letter-spacing: 1px; }
+
+.letra-doomsday {
+  font-family: 'Quicksand',Serif; }
 
 .borrar {
   border: 1px solid red; }

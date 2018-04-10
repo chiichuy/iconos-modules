@@ -8,6 +8,7 @@ $light: #a9abac;
 $dark: #333840;
 $link: #83c442;
 $subMenu:#ffffff;
+$placeholder:#ffffff;
 
 
 $theme-colors: (
@@ -51,8 +52,24 @@ $bg-extra-light: rgba(#F2F2F2,0.5);
 @import './custom/header';
 @import './custom/footer';
 @import './custom/content';
+//@import url('https://fonts.googleapis.com/css?family=Dosis');
+//@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+
+.letra-gilroy{//Popin
+  font-family: 'Poppins', sans-serif;
+}
+
+.letra-espaciada{
+  letter-spacing: 1px;
+}
 
 
+.letra-doomsday{//quick
+  font-family: 'Quicksand',Serif;
+}
 
 
 .borrar{
