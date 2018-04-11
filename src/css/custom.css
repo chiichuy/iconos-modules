@@ -7054,6 +7054,14 @@ h5.Campos,
 h6.Campos {
   color: #ca1474; }
 
+h1.light-titulo,
+h2.light-titulo,
+h3.light-titulo,
+h4.light-titulo,
+h5.light-titulo,
+h6.light-titulo {
+  color: #a9abac; }
+
 .info-center {
   margin: 2rem 0;
   text-align: center; }
@@ -7158,7 +7166,7 @@ h6.Campos {
     border-radius: 0;
     border: none;
     background-color: #a9abac;
-    color: #333840;
+    color: #ffffff;
     font-style: italic;
     padding-left: 0.5rem; }
   .form-tramites input::placeholder {
@@ -7179,7 +7187,7 @@ h6.Campos {
     border-radius: 0;
     border: none;
     background-color: #a9abac;
-    color: #333840;
+    color: #ffffff;
     font-style: italic;
     padding-left: 0.5rem; }
   .form-tramites-continuar input::placeholder {
@@ -7197,6 +7205,10 @@ h6.Campos {
 .tramites .ojo {
   height: 1rem;
   width: 1rem;
+  padding: 0; }
+.tramites .img-doc {
+  height: 1.2rem;
+  width: 1.2rem;
   padding: 0; }
 .tramites .detalle {
   height: 2rem;
@@ -7267,8 +7279,10 @@ h6.Campos {
   float: left;
   height: 100%;
   position: fixed;
-  border-right: 0.1rem solid #00b8b0; }
+  border-right: 0.2rem solid #333840;
+  border-left: 0.2rem solid #333840; }
   .nav-serv-pub li {
+    font-family: 'Quicksand','Serif';
     margin: 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;

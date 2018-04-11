@@ -130,6 +130,15 @@ h6.Campos {
   color: $secondary;
 }
 
+ h1.light-titulo,
+ h2.light-titulo,
+ h3.light-titulo,
+ h4.light-titulo,
+ h5.light-titulo,
+ h6.light-titulo {
+   color: $light;
+ }
+
 
 
 .info-center {
@@ -288,7 +297,7 @@ h6.Campos {
       border-radius: 0;
       border: none;
       background-color:  $light; //li
-      color: $dark;
+      color: $placeholder;
       font-style: italic;
       padding-left: 0.5rem;
     }
@@ -315,7 +324,7 @@ h6.Campos {
     border-radius: 0;
     border: none;
     background-color:  $light; //li
-    color: $dark;
+    color: $placeholder;
     font-style: italic;
     padding-left: 0.5rem;
   }
@@ -341,6 +350,12 @@ h6.Campos {
   .ojo {
     height: 1rem;
     width: 1rem;
+    padding: 0;
+  }
+
+  .img-doc{
+    height: 1.2rem;
+    width: 1.2rem;
     padding: 0;
   }
 
@@ -449,8 +464,10 @@ h6.Campos {
   float: left;
   height:100%;
   position: fixed;
-  border-right: 0.1rem solid $primary;
+  border-right: 0.2rem solid $dark;
+  border-left: 0.2rem solid $dark;
     li{
+      font-family: 'Quicksand','Serif';
       margin: 0;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
