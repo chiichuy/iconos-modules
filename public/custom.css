@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
 @media print {
   html,
   body,
@@ -6896,7 +6899,8 @@ a.text-link:hover, a.text-link:focus {
     background-color: transparent;
     border-radius: 0; }
     .navbar .form-inline button img {
-      height: 15px; }
+      font-family: Quicksand,Serif;
+      height: 17px; }
 
 .navbar-fixed-top {
   z-index: 10000;
@@ -7022,9 +7026,9 @@ h5.title,
 h6.title {
   color: #00b8b0; }
 
-.letra-doomsday {
-  font-family: 'Universal Doomsday'; }
-
+/*.letra-doomsday{
+  font-family:'Universal Doomsday';
+}*/
 h1.informacion,
 h2.informacion,
 h3.informacion,
@@ -7032,7 +7036,7 @@ h4.informacion,
 h5.informacion,
 h6.informacion {
   color: #83c442;
-  font-family: 'Universal Doomsday'; }
+  font-family: 'Quicksand',Serif; }
 
 h1.SubMenu,
 h2.SubMenu,
@@ -7049,6 +7053,14 @@ h4.Campos,
 h5.Campos,
 h6.Campos {
   color: #ca1474; }
+
+h1.light-titulo,
+h2.light-titulo,
+h3.light-titulo,
+h4.light-titulo,
+h5.light-titulo,
+h6.light-titulo {
+  color: #a9abac; }
 
 .info-center {
   margin: 2rem 0;
@@ -7146,20 +7158,58 @@ h6.Campos {
   width: 16.5rem;
   background: #ffffff; }
 
+.form-busqueda-PC input {
+  height: 2.5rem;
+  background-color: #a9abac;
+  border: none;
+  color: #ffffff; }
+.form-busqueda-PC input::placeholder {
+  color: #ffffff; }
+.form-busqueda-PC button {
+  height: 2.5rem;
+  width: auto;
+  background-color: #a9abac;
+  border: none; }
+  .form-busqueda-PC button img {
+    height: 1.2rem;
+    width: auto;
+    border: none; }
+
 .form-tramites {
   background: #a9abac; }
   .form-tramites input {
     height: 2.5rem;
-    width: 15rem;
+    width: 16rem;
     border-radius: 0;
     border: none;
     background-color: #a9abac;
-    color: #333840;
+    color: #ffffff;
     font-style: italic;
     padding-left: 0.5rem; }
   .form-tramites input::placeholder {
-    color: #333840; }
+    color: #ffffff; }
   .form-tramites button {
+    border-radius: 0;
+    background-color: #a9abac;
+    height: 2.5rem;
+    width: 3rem; }
+
+.form-tramites-continuar {
+  background: #a9abac;
+  height: 1.7rem;
+  margin-top: 1.5rem; }
+  .form-tramites-continuar input {
+    height: 2.5rem;
+    width: 16rem;
+    border-radius: 0;
+    border: none;
+    background-color: #a9abac;
+    color: #ffffff;
+    font-style: italic;
+    padding-left: 0.5rem; }
+  .form-tramites-continuar input::placeholder {
+    color: #ffffff; }
+  .form-tramites-continuar button {
     border-radius: 0;
     background-color: #a9abac;
     height: 2.5rem;
@@ -7172,6 +7222,10 @@ h6.Campos {
 .tramites .ojo {
   height: 1rem;
   width: 1rem;
+  padding: 0; }
+.tramites .img-doc {
+  height: 1.2rem;
+  width: 1.2rem;
   padding: 0; }
 .tramites .detalle {
   height: 2rem;
@@ -7237,13 +7291,15 @@ h6.Campos {
 
 .nav-serv-pub {
   margin: 0;
-  background: #a9abac;
+  background: #333840;
   width: 15%;
   float: left;
   height: 100%;
   position: fixed;
-  border-right: 0.1rem solid #a9abac; }
+  border-right: 0.2rem solid #333840;
+  border-left: 0.2rem solid #333840; }
   .nav-serv-pub li {
+    font-family: 'Quicksand','Serif';
     margin: 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -7256,40 +7312,16 @@ h6.Campos {
     .nav-serv-pub li a {
       text-decoration: none;
       text-align: center;
-      color: #333840; }
+      color: white; }
+      .nav-serv-pub li a:hover {
+        color: #333840; }
   .nav-serv-pub h5 {
     padding-top: 1rem;
     height: 3.5rem; }
 
-@media (max-width: 800px) {
-  .espaciado-arriba {
-    margin-top: 11rem;
-    display: contents;
-    border: 1px solid red; }
+.letra-dark {
+  color: #333840; }
 
-  .nav-serv-pub {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 17.5%; }
-    .nav-serv-pub li {
-      margin: 0;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      align-items: center;
-      height: 3.5rem;
-      border-bottom: 0.1rem solid #f7f7f7;
-      list-style: none; }
-      .nav-serv-pub li:hover {
-        background: #f7f7f7; }
-      .nav-serv-pub li a {
-        text-decoration: none;
-        text-align: center;
-        color: #333840; }
-    .nav-serv-pub h5 {
-      background: #a9abac;
-      padding-top: 1rem;
-      height: 3.5rem; } }
 .ancho {
   margin-left: 15%;
   width: 85%;
@@ -7322,6 +7354,15 @@ h6.Campos {
 .rounded-bottom {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
+
+.letra-gilroy {
+  font-family: 'Poppins', sans-serif; }
+
+.letra-espaciada {
+  letter-spacing: 1px; }
+
+.letra-doomsday {
+  font-family: 'Quicksand',Serif; }
 
 .borrar {
   border: 1px solid red; }

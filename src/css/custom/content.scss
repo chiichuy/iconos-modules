@@ -96,9 +96,10 @@ h6.title {
   color: $title-color;
 }
 
-.letra-doomsday{
+/*.letra-doomsday{
   font-family:'Universal Doomsday';
-}
+}*/
+
 
 
 h1.informacion,
@@ -108,7 +109,7 @@ h4.informacion,
 h5.informacion,
 h6.informacion {
   color: $informacion-color;
-  font-family:'Universal Doomsday';
+  font-family: 'Quicksand',Serif;
 }
 
 h1.SubMenu,
@@ -128,6 +129,15 @@ h5.Campos,
 h6.Campos {
   color: $secondary;
 }
+
+ h1.light-titulo,
+ h2.light-titulo,
+ h3.light-titulo,
+ h4.light-titulo,
+ h5.light-titulo,
+ h6.light-titulo {
+   color: $light;
+ }
 
 
 
@@ -276,25 +286,47 @@ h6.Campos {
 }
 
 
+.form-busqueda-PC{
+  input{
+    height: 2.5rem;
+    background-color:  $light;
+    border: none;
+    color: $placeholder;
+  }
+  input::placeholder {
+    color: $placeholder;
+  }
+  button{
+    height: 2.5rem;
+    width: auto;
+    background-color:  $light;
+    border: none;
+    img{
+      height:1.2rem;
+      width:auto;
+      border: none;
+    }
+  }
+
+}
 
 
 .form-tramites{
-
-
     background: $light;
+
     input {
       height: 2.5rem;
-      width: 15rem;
+      width: 16rem;
       border-radius: 0;
       border: none;
-      background-color: $light;
-      color: $dark;
+      background-color:  $light; //li
+      color: $placeholder;
       font-style: italic;
       padding-left: 0.5rem;
     }
 
     input::placeholder {
-      color: $dark;
+      color: $placeholder;
     }
 
     button {
@@ -303,8 +335,33 @@ h6.Campos {
       height: 2.5rem;
       width: 3rem;
     }
+}
 
+.form-tramites-continuar{
+  background: $light;
+  height: 1.7rem;
+  margin-top: 1.5rem;
+  input {
+    height: 2.5rem;
+    width: 16rem;
+    border-radius: 0;
+    border: none;
+    background-color:  $light; //li
+    color: $placeholder;
+    font-style: italic;
+    padding-left: 0.5rem;
+  }
 
+  input::placeholder {
+    color: $placeholder;
+  }
+
+  button {
+    border-radius: 0;
+    background-color: $light;
+    height: 2.5rem;
+    width: 3rem;
+  }
 }
 
 .tramites {
@@ -316,6 +373,12 @@ h6.Campos {
   .ojo {
     height: 1rem;
     width: 1rem;
+    padding: 0;
+  }
+
+  .img-doc{
+    height: 1.2rem;
+    width: 1.2rem;
     padding: 0;
   }
 
@@ -419,19 +482,20 @@ h6.Campos {
 
 .nav-serv-pub{
   margin: 0;
-  background: $light;
+  background: $dark;
   width: 15%;
   float: left;
   height:100%;
   position: fixed;
-  border-right: 0.1rem solid $light;
+  border-right: 0.2rem solid $dark;
+  border-left: 0.2rem solid $dark;
     li{
+      font-family: 'Quicksand','Serif';
       margin: 0;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       align-items: center;
       height: 3.5rem;
-
       border-bottom: 0.1rem solid $body-bg;
       list-style: none;
       &:hover{
@@ -440,57 +504,26 @@ h6.Campos {
       a {
         text-decoration: none;
         text-align: center;
-        color: $dark;
+        color: white;
+        &:hover{
+          color: $dark;
+        }
       }
     }
 
   h5{
     padding-top: 1rem;
     height: 3.5rem;
+
   }
+}
+//color para cambio de letra sen serv-pub
+.letra-dark{
+  color:$dark;
 }
 
 
 
-@media (max-width: 800px) {
-  .espaciado-arriba{
-    margin-top: 11rem;
-    display: contents;
-    border: 1px solid red;
-  }
-
-  .nav-serv-pub{
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height:17.5%;
-
-    li{
-      margin: 0;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      align-items: center;
-      height: 3.5rem;
-      border-bottom: 0.1rem solid $body-bg;
-      list-style: none;
-      &:hover{
-        background: $body-bg;
-      }
-      a {
-        text-decoration: none;
-        text-align: center;
-        color: $dark;
-      }
-    }
-
-    h5{
-      background: $light;
-      padding-top: 1rem;
-      height: 3.5rem;
-    }
-  }
-
-}
 
 .ancho{
   margin-left: 15%;
