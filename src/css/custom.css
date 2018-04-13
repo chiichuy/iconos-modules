@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Quicksand:500");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Poppins:300");
+@import url("https://fonts.googleapis.com/css?family=Questrial");
 @media print {
   html,
   body,
@@ -7355,14 +7355,17 @@ h6.light-titulo {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
 
+@font-face {
+  font-family: 'Poppins';
+  src: "https://fonts.googleapis.com/css?family=Poppins"; }
 .letra-gilroy {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif, regular; }
 
 .letra-espaciada {
   letter-spacing: 1px; }
 
 .letra-doomsday {
-  font-family: 'Quicksand',Serif; }
+  font-family: 'Quicksand',sans-serif; }
 
 .borrar {
   border: 1px solid red; }
