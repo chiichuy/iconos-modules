@@ -7158,6 +7158,23 @@ h6.light-titulo {
   width: 16.5rem;
   background: #ffffff; }
 
+.form-busqueda-PC input {
+  height: 2.5rem;
+  background-color: #a9abac;
+  border: none;
+  color: #ffffff; }
+.form-busqueda-PC input::placeholder {
+  color: #ffffff; }
+.form-busqueda-PC button {
+  height: 2.5rem;
+  width: auto;
+  background-color: #a9abac;
+  border: none; }
+  .form-busqueda-PC button img {
+    height: 1.2rem;
+    width: auto;
+    border: none; }
+
 .form-tramites {
   background: #a9abac; }
   .form-tramites input {
@@ -7305,35 +7322,6 @@ h6.light-titulo {
 .letra-dark {
   color: #333840; }
 
-@media (max-width: 800px) {
-  .espaciado-arriba {
-    margin-top: 12rem;
-    display: contents;
-    border: 1px solid red; }
-
-  .nav-serv-pub {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 17.5%; }
-    .nav-serv-pub li {
-      margin: 0;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      align-items: center;
-      height: 3.5rem;
-      border-bottom: 0.1rem solid #f7f7f7;
-      list-style: none; }
-      .nav-serv-pub li:hover {
-        background: #f7f7f7; }
-      .nav-serv-pub li a {
-        text-decoration: none;
-        text-align: center;
-        color: #333840; }
-    .nav-serv-pub h5 {
-      background: #a9abac;
-      padding-top: 1rem;
-      height: 3.5rem; } }
 .ancho {
   margin-left: 15%;
   width: 85%;
