@@ -7372,21 +7372,36 @@ h6.light-titulo {
   color: #a9abac;
   font-size: 0.9rem; }
 
-.paginacion {
-  background: #ffffff;
+/*.paginacion{
+  background:$contenedor-color;
   height: 3rem;
   margin-top: 2rem;
-  margin-bottom: 3rem; }
-  .paginacion .pagBoton {
-    border: none;
-    width: 2rem;
-    height: 30px;
-    background: Transparent;
+  margin-bottom: 3rem;
+  .pagBoton{
+    border:none;
+    width:2rem;
+    height:30px;
+    background:Transparent;
     margin-left: 0.5rem;
-    margin-right: 0.5rem; }
-  .paginacion .img-pag {
+    margin-right: 0.5rem;
+  }
+
+
+  .img-pag{
     width: 0.7rem;
-    height: 0.7rem; }
+    height: 0.7rem;
+  }
+
+}*/
+.paginacion-borde {
+  border: none;
+  border-radius: 0; }
+  .paginacion-borde:hover {
+    background: #fff; }
+
+.paginacion-sombra {
+  border: none;
+  border-radius: 0; }
 
 .nav-serv-pub {
   margin: 0;
