@@ -112,6 +112,22 @@
       position: relative;
       font-size: 2rem;
 
+      &:hover {
+        //border: 1px solid white;
+      }
+
+
+      .btn-group {
+        position: absolute;
+        //width: 4rem;
+        left: -6.5rem;
+        bottom: -0.5rem;
+        //background-color: white;
+
+        a {
+          margin-left: 0px;
+        }
+      }
 
       img {
         width: 2rem;

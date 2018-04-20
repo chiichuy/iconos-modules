@@ -182,7 +182,7 @@ h6.Campos {
 }
 
 .map {
-    width: 35rem;
+    width: 100%;
     height: 20rem;
 }
 
@@ -383,7 +383,7 @@ h6.Campos {
   }
 
   .detalle {
-    height: 2rem;
+    height: 1rem;
     width: auto;
     border: none;
     background: transparent;
@@ -457,7 +457,7 @@ h6.Campos {
 
 
 
-.paginacion{
+/*.paginacion{
   background:$contenedor-color;
   height: 3rem;
   margin-top: 2rem;
@@ -477,8 +477,23 @@ h6.Campos {
     height: 0.7rem;
   }
 
+}*/
 
+.paginacion-borde{
+  border:none;
+  border-radius: 0;
+  &:hover{
+    background: $white;
+  }
+ }
+
+
+.paginacion-sombra{
+  border:none;
+  border-radius: 0;
 }
+
+
 
 .nav-serv-pub{
   margin: 0;

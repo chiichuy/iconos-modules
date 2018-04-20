@@ -9,6 +9,7 @@ $dark: #333840;
 $link: #83c442;
 $subMenu:#ffffff;
 $placeholder:#ffffff;
+$bg-extra-light: rgba(#F2F2F2,1);
 
 
 $theme-colors: (
@@ -19,7 +20,8 @@ $theme-colors: (
         "warning": $warning,
         "light": rgba($light, 0.5),
         "dark": $dark,
-        "link": $link
+        "link": $link,
+        "extra-ligth": $bg-extra-light
 );
 
 
@@ -29,7 +31,7 @@ $contenedor-color:#ffffff;
 $bg-light: rgba($light, 0.5);
 $title-color: $primary;
 $informacion-color:$success;
-$bg-extra-light: rgba(#F2F2F2,0.5);
+
 
 @media print {
   html,
