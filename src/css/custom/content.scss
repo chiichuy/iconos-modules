@@ -445,8 +445,16 @@ h6.Campos {
     transform: rotate(-180deg);
   }
 
+
+
 }
 
+
+.ok{
+  &:hover {
+    color: $primary;
+  }
+}
 .detalle-status{
   .fuente-fecha{
     color:$light;
