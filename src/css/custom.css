@@ -310,6 +310,7 @@ template {
   --link: #83c442;
   --extra-ligth: #f2f2f2;
   --subMenu: #ffffff;
+  --body-bg: #f7f7f7;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1635,6 +1636,17 @@ pre {
   .table-hover .table-subMenu:hover > th {
     background-color: #f2f2f2; }
 
+.table-body-bg,
+.table-body-bg > th,
+.table-body-bg > td {
+  background-color: #fdfdfd; }
+
+.table-hover .table-body-bg:hover {
+  background-color: #f0f0f0; }
+  .table-hover .table-body-bg:hover > td,
+  .table-hover .table-body-bg:hover > th {
+    background-color: #f0f0f0; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2314,6 +2326,27 @@ fieldset:disabled a.btn {
     .btn-subMenu:not(:disabled):not(.disabled):active:focus, .btn-subMenu:not(:disabled):not(.disabled).active:focus, .show > .btn-subMenu.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
+.btn-body-bg {
+  color: #212529;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7; }
+  .btn-body-bg:hover {
+    color: #212529;
+    background-color: #e4e4e4;
+    border-color: #dedede; }
+  .btn-body-bg:focus, .btn-body-bg.focus {
+    box-shadow: 0 0 0 0.2rem rgba(247, 247, 247, 0.5); }
+  .btn-body-bg.disabled, .btn-body-bg:disabled {
+    color: #212529;
+    background-color: #f7f7f7;
+    border-color: #f7f7f7; }
+  .btn-body-bg:not(:disabled):not(.disabled):active, .btn-body-bg:not(:disabled):not(.disabled).active, .show > .btn-body-bg.dropdown-toggle {
+    color: #212529;
+    background-color: #dedede;
+    border-color: #d7d7d7; }
+    .btn-body-bg:not(:disabled):not(.disabled):active:focus, .btn-body-bg:not(:disabled):not(.disabled).active:focus, .show > .btn-body-bg.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(247, 247, 247, 0.5); }
+
 .btn-outline-primary {
   color: #00b8b0;
   background-color: transparent;
@@ -2544,6 +2577,27 @@ fieldset:disabled a.btn {
     border-color: #ffffff; }
     .btn-outline-subMenu:not(:disabled):not(.disabled):active:focus, .btn-outline-subMenu:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-subMenu.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+
+.btn-outline-body-bg {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f7f7f7; }
+  .btn-outline-body-bg:hover {
+    color: #212529;
+    background-color: #f7f7f7;
+    border-color: #f7f7f7; }
+  .btn-outline-body-bg:focus, .btn-outline-body-bg.focus {
+    box-shadow: 0 0 0 0.2rem rgba(247, 247, 247, 0.5); }
+  .btn-outline-body-bg.disabled, .btn-outline-body-bg:disabled {
+    color: #f7f7f7;
+    background-color: transparent; }
+  .btn-outline-body-bg:not(:disabled):not(.disabled):active, .btn-outline-body-bg:not(:disabled):not(.disabled).active, .show > .btn-outline-body-bg.dropdown-toggle {
+    color: #212529;
+    background-color: #f7f7f7;
+    border-color: #f7f7f7; }
+    .btn-outline-body-bg:not(:disabled):not(.disabled):active:focus, .btn-outline-body-bg:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-body-bg.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(247, 247, 247, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3809,6 +3863,14 @@ tbody.collapse.show {
     text-decoration: none;
     background-color: #e6e6e6; }
 
+.badge-body-bg {
+  color: #212529;
+  background-color: #f7f7f7; }
+  .badge-body-bg[href]:hover, .badge-body-bg[href]:focus {
+    color: #212529;
+    text-decoration: none;
+    background-color: #dedede; }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -3943,6 +4005,15 @@ tbody.collapse.show {
     border-top-color: #f2f2f2; }
   .alert-subMenu .alert-link {
     color: #6c6c6c; }
+
+.alert-body-bg {
+  color: gray;
+  background-color: #fdfdfd;
+  border-color: #fdfdfd; }
+  .alert-body-bg hr {
+    border-top-color: #f0f0f0; }
+  .alert-body-bg .alert-link {
+    color: #676767; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4153,6 +4224,17 @@ tbody.collapse.show {
     color: #fff;
     background-color: #858585;
     border-color: #858585; }
+
+.list-group-item-body-bg {
+  color: gray;
+  background-color: #fdfdfd; }
+  .list-group-item-body-bg.list-group-item-action:hover, .list-group-item-body-bg.list-group-item-action:focus {
+    color: gray;
+    background-color: #f0f0f0; }
+  .list-group-item-body-bg.list-group-item-action.active {
+    color: #fff;
+    background-color: gray;
+    border-color: gray; }
 
 .close {
   float: right;
@@ -4747,6 +4829,14 @@ button.bg-subMenu:hover,
 button.bg-subMenu:focus {
   background-color: #e6e6e6 !important; }
 
+.bg-body-bg {
+  background-color: #f7f7f7 !important; }
+
+a.bg-body-bg:hover, a.bg-body-bg:focus,
+button.bg-body-bg:hover,
+button.bg-body-bg:focus {
+  background-color: #dedede !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -4815,6 +4905,9 @@ button.bg-subMenu:focus {
 
 .border-subMenu {
   border-color: #ffffff !important; }
+
+.border-body-bg {
+  border-color: #f7f7f7 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -6991,6 +7084,12 @@ a.text-extra-ligth:hover, a.text-extra-ligth:focus {
 a.text-subMenu:hover, a.text-subMenu:focus {
   color: #e6e6e6 !important; }
 
+.text-body-bg {
+  color: #f7f7f7 !important; }
+
+a.text-body-bg:hover, a.text-body-bg:focus {
+  color: #dedede !important; }
+
 .text-muted {
   color: #6c757d !important; }
 
@@ -7135,6 +7234,12 @@ a.text-subMenu:hover, a.text-subMenu:focus {
     margin: auto;
     position: relative;
     font-size: 2rem; }
+    .tramitensNav .user .ico .btn-group {
+      position: absolute;
+      left: -6.5rem;
+      bottom: -0.5rem; }
+      .tramitensNav .user .ico .btn-group a {
+        margin-left: 0px; }
     .tramitensNav .user .ico img {
       width: 2rem;
       height: 2rem;
@@ -7166,12 +7271,15 @@ footer {
   height: 5rem; }
 
 .laNube {
-  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   background-color: #333840; }
   .laNube .logo {
     width: 6rem;
     height: 2rem; }
+
+.lineaColores {
+  height: 0.2rem; }
 
 .content {
   padding-top: 2rem; }

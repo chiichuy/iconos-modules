@@ -20,11 +20,15 @@ footer {
 }
 
 .laNube{
-  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   background-color: $dark;
      .logo{
         width: 6rem;
         height: 2rem;
      }
+}
+
+.lineaColores{
+  height: 0.2rem;
 }
