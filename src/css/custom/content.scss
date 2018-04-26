@@ -455,6 +455,8 @@ h6.Campos {
     color: $primary;
   }
 }
+
+
 .detalle-status{
   .fuente-fecha{
     color:$light;
@@ -589,6 +591,10 @@ h6.Campos {
 .rounded-bottom {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important;
+}
+
+.tipo-seleccion {
+  cursor: pointer;
 }
 
 

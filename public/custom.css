@@ -7691,6 +7691,9 @@ h6.light-titulo {
   border-bottom-left-radius: 1.5rem !important;
   border-bottom-right-radius: 1.5rem !important; }
 
+.tipo-seleccion {
+  cursor: pointer; }
+
 @font-face {
   font-family: 'Poppins';
   src: "https://fonts.googleapis.com/css?family=Poppins"; }
