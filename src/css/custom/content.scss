@@ -598,4 +598,75 @@ h6.Campos {
 }
 
 
+/* Clase que tendra el tooltip */
+.cssToolTip {
+  position: relative; /* Esta clase tiene que tener posicion relativa */
+  color: $subMenu; /* Color del texto */
+}
 
+/* El tooltip */
+.cssToolTip span {
+  background: $dark;
+  border-radius: 5px;
+  color: $subMenu;
+  display: none; /* El tooltip por defecto estara oculto */
+  font-size: 0.8em;
+  padding: 10px;
+  width: 15rem;
+  position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+  top: -90%; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+  left: -50%; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+  z-index: 100; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+  height: 6rem;
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip:hover span {
+  display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+.cssToolTip span::after{
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 48%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $dark transparent transparent transparent;
+
+}
+
+
+/* El tooltip chico */
+.cssToolTip-ch span {
+  background: $dark;
+  border-radius: 5px;
+  color: $subMenu;
+  display: none; /* El tooltip por defecto estara oculto */
+  font-size: 0.8em;
+  padding: 10px;
+  width: 10rem;
+  position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+  top: -50%; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+  left: -20%; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+  z-index: 100; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+  height: 3rem;
+}
+
+/* El tooltip cuando se muestra */
+.cssToolTip-ch:hover span {
+  display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+}
+
+.cssToolTip-ch span::after{
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 48%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $dark transparent transparent transparent;
+
+}
