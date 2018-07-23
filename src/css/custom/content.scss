@@ -340,7 +340,7 @@ h6.Campos {
 .form-tramites-continuar{
   background: $light;
   height: 1.7rem;
-  margin-top: 1.5rem;
+  margin-top: 14px;
   input {
     height: 2.5rem;
     width: 16rem;
@@ -445,8 +445,6 @@ h6.Campos {
     transform: rotate(-180deg);
   }
 
-
-
 }
 
 
@@ -501,9 +499,11 @@ h6.Campos {
 .paginacion-sombra{
   border:none;
   border-radius: 0;
+
+  &:hover{
+    background: $body-bg;
+  }
 }
-
-
 
 .nav-serv-pub{
   margin: 0;
@@ -598,7 +598,8 @@ h6.Campos {
 }
 
 
-/* Clase que tendra el tooltip */
+
+
 .cssToolTip {
   position: relative; /* Esta clase tiene que tener posicion relativa */
   color: $subMenu; /* Color del texto */
@@ -643,7 +644,7 @@ h6.Campos {
   background: $dark;
   border-radius: 5px;
   color: $subMenu;
-  display: none; /* El tooltip por defecto estara oculto */
+  display: none;
   font-size: 0.8em;
   padding: 10px;
   width: 10rem;
@@ -669,4 +670,26 @@ h6.Campos {
   border-style: solid;
   border-color: $dark transparent transparent transparent;
 
+}
+
+.impresora-portal-img{
+  height: 4.8rem;
+  width: 8.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .contenedor-de-img{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+.voltearImagen{
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }

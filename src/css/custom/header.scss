@@ -87,6 +87,14 @@
     margin: 1.5rem;
   }
 
+  .verticalSP{
+    border: 0px solid $dark;
+    border-left-width: 1px;
+    margin: 1.5rem;
+  }
+
+
+
   img {
     margin: 1.5rem 0;
 
@@ -139,6 +147,8 @@
     }
 
 
+
+
   }
 
   .lineas {
@@ -152,4 +162,124 @@
     }
   }
 
+  .estilo-header{
+    margin-left:-1.9rem;
+  }
+
+  .posicion{
+    margin-right:-1.8rem;
+  }
+
+
 }
+
+
+.list-content{
+  display:flex;
+  padding-left: 0px;
+}
+
+.list-ul-li{
+  margin: 0;
+  padding: 0;
+
+}
+.list-li{
+  display: inline-block;
+  text-align: left;
+  color: white!important;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list-li:hover{
+  text-decoration: none;
+  color:white!important;
+ /* background: #5a6270;*/
+  background: #535a67;
+}
+
+.list-li{
+  .icon-logoRedondo{
+    font-size:15px!important;
+  }
+}
+.list-li-ciudadano:hover{
+  background: #585e6c;
+}
+
+.list-li-menu{
+  display: inline-block;
+  text-align: left;
+ /* color: $dark;*/
+  color: white!important;
+  cursor: pointer;
+  font-size: 0.9REM;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.list-li-menu {
+  .estilo-fuente {
+    color:$subMenu;
+    text-decoration: none;
+    &:hover{
+      color: $light;
+    }
+  }
+}
+
+.list-li{
+  .estilo-fuente {
+    color:$subMenu;
+    text-decoration: none;
+  }
+}
+
+
+
+
+  .bg-menu-cidano{
+    background: $bg-menu-cidano;
+  }
+
+  .bg-menu-sp{
+    background: $dark;
+  }
+
+  .bg-header-sp{
+    background: $bg-menu-sp;
+  }
+
+  .menu-ico-ballena{
+    height: 15px;
+    width: 15px;
+  }
+
+  .buscador-menu{
+    background: $bg-menu-sp;
+    border-radius:0%;
+    width: 14rem!important;
+    border-top-left-radius: 4px!important;
+    border-bottom-left-radius: 4px!important;
+    color:$dark;
+  }
+  .buscador-menu::placeholder {
+    color: $light;
+    font-style: italic;
+  }
+
+  .btn-busqueda-menu{
+    border-color: $light;
+    border-radius:0%;
+    background: $light;
+    color:white;
+    border-top-right-radius: 4px!important;
+    border-bottom-right-radius: 4px!important;
+  }
+

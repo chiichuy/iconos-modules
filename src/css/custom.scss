@@ -1,16 +1,18 @@
 $primary: #00b8b0;
 $secondary: #ca1474;
-$success: #83c442;
+$success: #ca1474;
 $danger: #ea4330;
 $warning: #f8971d;
 $info: #00b8b0;
 $light: #a9abac;
 $dark: #333840;
-$link: #83c442;
+$link: #ca1474;
 $subMenu:#ffffff;
 $placeholder:#ffffff;
 $bg-extra-light: rgba(#F2F2F2,1);
 $body-bg: #f7f7f7;
+$bg-menu-cidano:#50525c;
+$bg-menu-sp:#ffffff;
 
 $theme-colors: (
         "primary": $primary,
@@ -23,7 +25,9 @@ $theme-colors: (
         "link": $link,
         "extra-ligth": $bg-extra-light,
         "subMenu":$subMenu,
-        "body-bg":$body-bg
+        "body-bg":$body-bg,
+        "bg-menu-cidano":$bg-menu-cidano,
+        "bg-menu-sp":$bg-menu-sp
 );
 
 
@@ -127,9 +131,8 @@ hr {
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-
-
   }
+
 }
 
 @keyframes spin {
@@ -139,7 +142,6 @@ hr {
       transform: rotate(360deg);
     }
 }
-
 
 .input-group > .form-control:not(:last-child),
 .input-group > .custom-select:not(:last-child) {
@@ -173,21 +175,23 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
 .card-header.bg-dark {
   border: 1px solid $dark;
 
-  img.triangulos {
+  img.uvas{
     height: 2rem;
-    transform: rotate(180deg);
+    width: 2rem;
+    margin-top:4px;
+    margin-bottom: 4px;
+    margin-right: 9px;
   }
 
   .folio {
     color: $dark;
     font-size: 1.5rem;
-    max-height: 3rem;
-
+    max-height: 4rem;
 
     &::before {
       content:"";/* required */
       position: absolute; /* takes the 'cap' out off flow */
-      border-width: 1.5rem 1rem;
+      border-width: 20px 16px;
       margin-left: -2.5rem;
       border-style:solid;
       border-color:$primary; /* same as bg of our rectangle */
@@ -199,7 +203,7 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
     &.bg-warning::before {
       content:"";/* required */
       position: absolute; /* takes the 'cap' out off flow */
-      border-width: 1.5rem 1rem;
+      border-width: 20px 16px;
       margin-left: -2.5rem;
       border-style:solid;
       border-color:$warning; /* same as bg of our rectangle */
@@ -211,7 +215,7 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
     &.bg-secondary::before {
       content:"";/* required */
       position: absolute; /* takes the 'cap' out off flow */
-      border-width: 1.5rem 1rem;
+      border-width: 20px 16px;
       margin-left: -2.5rem;
       border-style:solid;
       border-color:$secondary; /* same as bg of our rectangle */
@@ -223,7 +227,7 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
     &.bg-success::before {
       content:"";/* required */
       position: absolute; /* takes the 'cap' out off flow */
-      border-width: 1.5rem 1rem;
+      border-width: 20px 16px;
       margin-left: -2.5rem;
       border-style:solid;
       border-color:$success; /* same as bg of our rectangle */
@@ -232,9 +236,16 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
       border-left-color:transparent;
     }
   }
-
-
+  .titulo{
+    color: $subMenu;
+    font-size: 1.5rem;
+    max-height: 4rem;
+  }
+  .titulo-margenes{
+    margin-top:3px;
+    padding-left: 15px;
+    width: auto;
+  }
 
 }
-
 

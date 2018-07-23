@@ -7433,9 +7433,8 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
 
 .card-header.bg-dark {
   border: 1px solid #333840; }
-  .card-header.bg-dark img.triangulos {
-    height: 2rem;
-    transform: rotate(180deg); }
+  .card-header.bg-dark img.uvas {
+    height: 2rem; }
   .card-header.bg-dark .folio {
     color: #333840;
     font-size: 1.5rem;
