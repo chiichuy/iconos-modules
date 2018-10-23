@@ -1,6 +1,6 @@
 $primary: #00b8b0;
 $secondary: #ca1474;
-$success: #ca1474;
+$success: #00b8b0;
 $danger: #ea4330;
 $warning: #f8971d;
 $info: #00b8b0;
@@ -247,5 +247,80 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
     width: auto;
   }
 
+}
+
+
+/*
+.area{
+  text-align:center;
+  color:$primary;
+  text-transform:uppercase;
+  animation:blur .80s ease-out infinite;
+  text-shadow:0px 0px 5px #fff,
+  0px 0px 7px #fff;
+}
+
+@keyframes blur{
+  from{
+    text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px $primary,
+    0px 0px 150px $primary,
+    0px 10px 100px $primary;}
+}
+
+.areaa {
+  color: $dark;
+  left: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  animation: move linear 2000ms infinite;
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+            -2px 2px 0 $primary,
+            -1px 1px 0 $primary
+  ;
+  }
+  25% {
+    text-shadow:
+            -2px -2px 0 $primary,
+            -1px -1px 0 $primary
+  ;
+  }
+  50% {
+    text-shadow:
+            2px -2px 0 $primary,
+            1px -1px 0 $primary
+  ;
+  }
+  75% {
+    text-shadow:
+            2px 2px 0 $primary,
+            1px 1px 0 $primary
+  ;
+  }
+  100% {
+    text-shadow:
+            -2px 2px 0 $primary,
+            -1px 1px 0 $primary
+  ;
+  }
+}
+
+*/
+
+.area{
+  text-shadow:1px 1px 0 $light;
+  letter-spacing: 2px;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
