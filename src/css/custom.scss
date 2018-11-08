@@ -13,6 +13,7 @@ $bg-extra-light: rgba(#F2F2F2,1);
 $body-bg: #f7f7f7;
 $bg-menu-cidano:#50525c;
 $bg-menu-sp:#ffffff;
+$dark-light: #9a9c9d;
 
 $theme-colors: (
         "primary": $primary,
@@ -27,7 +28,8 @@ $theme-colors: (
         "subMenu":$subMenu,
         "body-bg":$body-bg,
         "bg-menu-cidano":$bg-menu-cidano,
-        "bg-menu-sp":$bg-menu-sp
+        "bg-menu-sp":$bg-menu-sp,
+        "dark-light":$dark-light
 );
 
 
