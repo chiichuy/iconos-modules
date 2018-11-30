@@ -14,6 +14,8 @@ $body-bg: #f7f7f7;
 $bg-menu-cidano:#50525c;
 $bg-menu-sp:#ffffff;
 $dark-light: #9a9c9d;
+$light-yellow: #f8eebe;
+$extra-light-yellow: #fcffe9;
 
 $theme-colors: (
         "primary": $primary,
@@ -29,7 +31,9 @@ $theme-colors: (
         "body-bg":$body-bg,
         "bg-menu-cidano":$bg-menu-cidano,
         "bg-menu-sp":$bg-menu-sp,
-        "dark-light":$dark-light
+        "dark-light":$dark-light,
+        "light-yellow":$light-yellow,
+        "extra-light-yellow":$extra-light-yellow
 );
 
 
@@ -323,6 +327,81 @@ nav.navbar.sticky-top.navbar-light.tramiteMenu {
   letter-spacing: 2px;
   &:hover{
     text-decoration: underline;
+  }
+}
+
+
+.card-header.versatil {
+  border: 1px solid transparent;
+
+  img.uvas{
+    height: 2rem;
+    width: 2rem;
+    margin-top:4px;
+    margin-bottom: 4px;
+    margin-right: 9px;
+  }
+
+  .folio{
+    max-height: 4rem;
+
+
+    &::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 20px 16px;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$primary; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+
+    &.bg-warning::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 20px 16px;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$warning; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+
+    &.bg-secondary::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 20px 16px;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$secondary; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+
+    &.bg-success::before {
+      content:"";/* required */
+      position: absolute; /* takes the 'cap' out off flow */
+      border-width: 20px 16px;
+      margin-left: -2.5rem;
+      border-style:solid;
+      border-color:$success; /* same as bg of our rectangle */
+      /* now we make some of theborders disappear*/
+      border-top-color:transparent;
+      border-left-color:transparent;
+    }
+  }
+
+  .titulo{
+    max-height: 4rem;
+  }
+  .titulo-margenes{
+    margin-top:3px;
+    padding-left: 15px;
+    width: auto;
   }
 }
 

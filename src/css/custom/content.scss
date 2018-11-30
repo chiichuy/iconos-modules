@@ -702,3 +702,184 @@ h6.Campos {
   }
 
 }
+
+.registro-sp{
+
+  #contenedor-Descripcion{
+    min-height: 4rem;
+  }
+
+  #delinear{
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+  table{
+    #colorCabecera{
+      background-color: $dark;
+      color:white;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    .estiloCuerpo{
+      border-bottom: 3px solid $dark;
+    }
+
+    .folio{
+      width: 20rem;
+      max-width: 20rem;
+      border-right: 1px solid $dark-light;
+      word-break: break-all;
+
+      .delinear{
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .nombreTramite{
+      width:45rem;
+      max-width: 45rem;
+      border-right: 1px solid $dark-light;
+    }
+    .fechaSolicitud{
+      width: 15.5rem;
+      max-width: 15.5rem;
+      border-right: 1px solid $dark-light;
+      font-size: 14px;
+      padding-top: 6px;
+    }
+    .fechaCambioEstatus{
+      width: 15.5rem;
+      max-width: 15.5rem;
+      border-right: 1px solid $dark-light;
+      font-size: 14px;
+      padding-top: 8px;
+    }
+    .estatusTramite{
+      width: 19rem;
+      max-width: 19rem;
+      border-right: 1px solid $dark-light;
+    }
+    .historialUsuarios{
+      width: 19rem;
+      max-width: 19rem;
+      border-right: 1px solid $dark-light;
+      word-break: break-all;
+
+      .delinear{
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+
+    }
+    .accionesTramite{
+      width: 12rem;
+      max-width: 12rem;
+    }
+
+    #margenImg{
+      padding-top: 14px;
+    }
+
+
+  }
+
+}
+
+.tipoLink{
+  .puntero-seleccion{
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.imprimirInformacionTramite{
+  background-color: white;
+  width: 50% ;
+  position: absolute;
+  top:8%;
+  left: 25%;
+  border-radius: 6px;
+
+  #cabeceraDiseno{
+    position:relative;
+    width:100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  #botonCerrar{
+   position: absolute;
+   right:10px;
+   width: 35px;
+   height: 35px;
+  }
+
+  #titulo{
+    font-size: 1.3rem;
+  }
+
+  #subtitulo{
+    font-size: 1.3rem;
+  }
+
+  #caja{
+    overflow-y:scroll ;
+    max-height: 40rem ;
+    min-height: 60px ;
+    resize:none ;
+    padding: 0.8rem;
+  }
+}
+
+@media print {
+
+  .imprimirInformacionTramite{
+    background-color: white;
+    width: 96% ;
+    position: absolute;
+    top:2%;
+    left: 2%;
+    border-radius: 6px;
+
+    #cabeceraDiseno{
+      position:relative;
+      width:100%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    #botonCerrar{
+      position: absolute;
+      right:10px;
+      width: 35px;
+      height: 35px;
+    }
+
+    #titulo{
+      font-size: 1.3rem;
+    }
+
+    #subtitulo{
+      font-size: 1.3rem;
+    }
+
+    #caja{
+      overflow-y:visible;
+      max-height: none ;
+      height: auto;
+      min-height: 60px ;
+      resize:none ;
+      padding: 0.8rem;
+    }
+  }
+}
