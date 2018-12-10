@@ -841,6 +841,13 @@ h6.Campos {
   }
 }
 
+#paginaTramite{
+  padding-top: 1.2rem;
+  #elEntrelineado{
+    line-height: normal;
+  }
+}
+
 @media print {
 
   .imprimirInformacionTramite{
@@ -882,4 +889,13 @@ h6.Campos {
       padding: 0.8rem;
     }
   }
+
+
+  #paginaTramite{
+    top:0;
+  }
+}
+
+.margenBusqueda{
+     min-height: 42.5rem;
 }
